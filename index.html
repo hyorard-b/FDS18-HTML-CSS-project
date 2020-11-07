@@ -7,75 +7,87 @@
     <title>Cafe W</title>
 </head>
 <body>
-    <header class="header">
+    <div class="skip-nav" tabindex="0"><a href="#menuNav">메뉴 바로가기</a></div>
+    <div class="skip-nav" tabindex="1"><a href="#main">콘텐츠 바로가기</a></div>
+    <header class="header"id="header">
         <div class="header__container">
             <h1 class="offscreen">Cafe W</h1>
-            <a href="#" class="header__home-link"><img src="./img/logo.png" alt="Cafe W의 로고" class="header__logo"></a>
-            <nav class="nav">
-                <h2 class="offscreen">네비게이션</h2>
-                <ul class="nav__items">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Drinks</a>
-                        <ul class="nav__sub-items">
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">콜드 브루</a></li>
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">에스프레소</a></li>
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">기타 제조 음료</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Foods</a>
-                        <ul class="nav__sub-items">
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">베이커리</a></li>
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">케잌</a></li>
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">샌드위치 &amp; 샐러드</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Products</a>
-                        <ul class="nav__sub-items">
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">머그</a></li>
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">텀블러</a></li>
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">커피용품</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Lectures</a>
-                        <ul class="nav__sub-items">
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">UI 구조 &amp; 디자인</a></li>
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">UI 인터렉션 주니어</a></li>
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">리엑트 프로그래밍</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Customer Service</a>
-                        <ul class="nav__sub-items">
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">공지사항</a></li>
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">추천 채널</a></li>
-                            <li class="nav__sub-item"><a href="#" class="nav__link sub-item__link">체크 리스트</a></li>
-                        </ul>
-                    </li>
+            <a href="index.html" class="header__home-link"><img src="./img/logo.png" alt="Cafe W의 로고" class="header__logo"></a>
+            <!-- login and sign up -->
+            <nav class="nav" aria-labelledby="memberNav">
+                <h2 class="offscreen" id="memberNav">회원메뉴</h2>
+                <ul class="nav__member-items">
+                    <li class="nav__member-item"><a href="./html/sign-in.html" class="nav__member-link">Sign In</a> </li>
+                    <li class="nav__member-item"><a href="./html/sign-up.html" class="nav__member-link">Sign Up</a></li>
                 </ul>
             </nav>
+            <!-- search form -->
+            <button class="btn-search-form-open" type="button" title="검색창 띄우기">
+                <span class="ir">검색창 띄우기</span>
+            </button>
             <form action="#" class="search-form" method="GET">
                 <fieldset>
                     <legend>검색 영역</legend>
-                    <button class="search-form__btn-open" type="button">
-                        <span class="ir">검색창 띄우기</span>
-                    </button>
                     <label for="searchInput" class="offscreen">검색창</label>
-                    <input type="text" id="searchInput" >
+                    <input type="search" name="searchInput" id="searchInput" placeholder="검색어를 입력하세요...">
                     <button class="search-form__btn-submit" type="submit">
                         <span class="ir">검색하기</span>
                     </button>
                 </fieldset>
             </form>
+            <!-- menu list -->
+            <nav class="nav" aria-labelledby="menuNav">
+                <h2 class="offscreen" id="menuNav">메뉴리스트</h2>
+                <ul class="nav__menu-items">
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Drinks</a>
+                        <ul class="nav__submenu-items">
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">콜드 브루</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">에스프레소</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">기타 제조 음료</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Foods</a>
+                        <ul class="nav__submenu-items">
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">베이커리</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">케잌</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">샌드위치 &amp; 샐러드</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Products</a>
+                        <ul class="nav__submenu-items">
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">머그</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">텀블러</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">커피용품</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Lectures</a>
+                        <ul class="nav__submenu-items">
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">UI 구조 &amp; 디자인</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">UI 인터렉션 주니어</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">리엑트 프로그래밍</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Customer Service</a>
+                        <ul class="nav__submenu-items">
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">공지사항</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">추천 채널</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">체크 리스트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main></main>
+    <main id="main"></main>
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__logo">
-                <img src="./img/Cafe W (Vertical).png" alt="하단쪽 Cafe W 로고"/>
+                <img src="./img/Cafe W (Vertical).png" alt="하단쪽에 위치한 Cafe W 로고"/>
             </div>
             <ul class="footer__info-items">
                 <li class="footer__info-item"><a class="footer__info-link" href="#">개인정보처리방침</a></li>
@@ -100,5 +112,27 @@
             <small class="footer__copyright">&copy; 2020 CAFE W COMPANY.ALL RIGHTS RESERVED.</small>
         </div>
     </footer>
+    <button type="button" id="goToTopBtn" class="button-goToTop">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <title>페이지 상단 이동</title>
+            <circle cx="25" cy="25" r="25" fill="#C8CDE2" />
+            <path d="M25 38C25.6072 38 26.1 37.5147 26.1 36.9167V15.3047L34.1037 23.5803C34.3198 23.804 34.6097 23.9167 34.9001 23.9167C35.1723 23.9167 35.4457 23.8175 35.6585 23.6177C36.0985 23.2049 36.1156 22.5192 35.6965 22.0858L26.556 12.6348C26.1402 12.2259 25.588 12 25 12C24.412 12 23.8598 12.2259 23.4259 12.6538L14.3035 22.0864C13.8844 22.5197 13.9015 23.2055 14.3415 23.6182C14.7815 24.031 15.4783 24.0142 15.8969 23.5808L23.9 15.2706V36.9167C23.9 37.5147 24.3928 38 25 38Z" fill="#0F0F0F" />
+        </svg>
+    </button>
+    <script>
+        window.addEventListener("scroll", function() {
+            const targetTop = document.querySelector("#header").getBoundingClientRect().bottom;
+            const scrollTop = window.scrollY;
+            console.log(targetTop<scrollTop);
+            if(scrollTop>targetTop) {
+                document.querySelector("#goToTopBtn").classList.add("is--btnActive");
+            } else {
+                document.getElementById("goToTopBtn").classList.remove('is--btnActive');
+            }
+        })
+        document.querySelector("#goToTopBtn").addEventListener("click", function(){
+            document.querySelector("#header").scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
 </body>
 </html>
