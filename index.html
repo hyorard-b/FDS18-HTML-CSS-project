@@ -10,31 +10,35 @@
     <div class="skip-nav" tabindex="0"><a href="#menuNav">메뉴 바로가기</a></div>
     <div class="skip-nav" tabindex="1"><a href="#main">콘텐츠 바로가기</a></div>
     <header class="header"id="header">
-        <div class="header__container">
+        <div class="header__container container">
             <h1 class="offscreen">Cafe W</h1>
-            <a href="index.html" class="header__home-link"><img src="./img/logo.png" alt="Cafe W의 로고" class="header__logo"></a>
-            <!-- login and sign up -->
-            <nav class="nav" aria-labelledby="memberNav">
-                <h2 class="offscreen" id="memberNav">회원메뉴</h2>
-                <ul class="nav__member-items">
-                    <li class="nav__member-item"><a href="./html/sign-in.html" class="nav__member-link">Sign In</a> </li>
-                    <li class="nav__member-item"><a href="./html/sign-up.html" class="nav__member-link">Sign Up</a></li>
-                </ul>
-            </nav>
-            <!-- search form -->
-            <button class="btn-search-form-open" type="button" title="검색창 띄우기">
-                <span class="ir">검색창 띄우기</span>
-            </button>
-            <form action="#" class="search-form" method="GET">
-                <fieldset>
-                    <legend>검색 영역</legend>
-                    <label for="searchInput" class="offscreen">검색창</label>
-                    <input type="search" name="searchInput" id="searchInput" placeholder="검색어를 입력하세요...">
-                    <button class="search-form__btn-submit" type="submit">
-                        <span class="ir">검색하기</span>
+            <div class="sub-nav-container container">
+                <a href="index.html" class="header__home-link"><img src="./img/logo.png" alt="Cafe W의 로고" class="header__logo img-rwd"></a>
+                <!-- login and sign up -->
+                <nav class="nav" aria-labelledby="memberNav">
+                    <h2 class="offscreen" id="memberNav">회원메뉴</h2>
+                    <ul class="nav__member-items">
+                        <li class="nav__member-item"><a href="./html/sign-in.html" class="nav__member-link">Sign In</a> </li>
+                        <li class="nav__member-item"><a href="./html/sign-up.html" class="nav__member-link">Sign Up</a></li>
+                    </ul>
+                </nav>
+                <!-- search form -->
+                <div class="search-form__container is--active">
+                    <button class="search-form__btn-open reset-button" type="button" title="검색창 띄우기">
+                        <span class="ir hide-text-ir">검색창 띄우기</span>
                     </button>
-                </fieldset>
-            </form>
+                    <form action="#" class="search-form" method="GET">
+                        <fieldset>
+                            <legend>검색 영역</legend>
+                            <label for="searchInput" class="offscreen">검색창</label>
+                            <input type="search" name="searchInput" id="searchInput" placeholder="검색어를 입력하세요...">
+                            <button class="search-form__btn-submit reset-button" type="submit" title="검색하기">
+                                <span class="ir hide-text-ir">검색하기</span>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
             <!-- menu list -->
             <nav class="nav" aria-labelledby="menuNav">
                 <h2 class="offscreen" id="menuNav">메뉴리스트</h2>
@@ -42,41 +46,41 @@
                     <li class="nav__menu-item">
                         <a class="nav__menu-link" href="#">Drinks</a>
                         <ul class="nav__submenu-items">
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">콜드 브루</a></li>
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">에스프레소</a></li>
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">기타 제조 음료</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">콜드 브루</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">에스프레소</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">기타 제조 음료</a></li>
                         </ul>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Foods</a>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Foods</a>
                         <ul class="nav__submenu-items">
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">베이커리</a></li>
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">케잌</a></li>
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">샌드위치 &amp; 샐러드</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">베이커리</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">케잌</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">샌드위치 &amp; 샐러드</a></li>
                         </ul>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Products</a>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Products</a>
                         <ul class="nav__submenu-items">
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">머그</a></li>
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">텀블러</a></li>
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">커피용품</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">머그</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">텀블러</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">커피용품</a></li>
                         </ul>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Lectures</a>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Lectures</a>
                         <ul class="nav__submenu-items">
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">UI 구조 &amp; 디자인</a></li>
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">UI 인터렉션 주니어</a></li>
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">리엑트 프로그래밍</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">UI 구조 &amp; 디자인</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">UI 인터렉션 주니어</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">리엑트 프로그래밍</a></li>
                         </ul>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Customer Service</a>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Customer Service</a>
                         <ul class="nav__submenu-items">
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">공지사항</a></li>
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">추천 채널</a></li>
-                            <li class="nav__submenu-item"><a href="#" class="nav__link submenu-item__link">체크 리스트</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">공지사항</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">추천 채널</a></li>
+                            <li class="nav__submenu-item"><a href="#" class="nav__submenu-link">체크 리스트</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -85,9 +89,9 @@
     </header>
     <main id="main"></main>
     <footer class="footer">
-        <div class="footer__container">
+        <div class="footer__container container">
             <div class="footer__logo">
-                <img src="./img/Cafe W (Vertical).png" alt="하단쪽에 위치한 Cafe W 로고"/>
+                <img src="../img/footer-logo.png" class="img-rwd" alt="하단쪽에 위치한 Cafe W 로고"/>
             </div>
             <ul class="footer__info-items">
                 <li class="footer__info-item"><a class="footer__info-link" href="#">개인정보처리방침</a></li>
@@ -101,8 +105,7 @@
             <address class="footer__address-container">
                 <span class="footer__address-info">서울특별시 강남구 테헤란로 10길 18K&amp;I 타워 카페 W (2F)</span>
                 <span class="divider" aria-hidden="true">ㅣ</span>
-                <span class="footer__address-info">연락처 : 02-6951-2121</span>
-                <span class="divider" aria-hidden="true">ㅣ</span>
+                <span class="footer__address-info">연락처 : <a href="tel:02-6951-2121">02-6951-2121</a></span><br>
                 <span class="footer__address-info">사업자 등록번호 : 107-86-16302</span>
                 <span class="divider" aria-hidden="true">ㅣ</span>
                 <span class="footer__address-info">통신판매업 신고 : 강남 제 002519호</span>

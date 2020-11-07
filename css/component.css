@@ -42,3 +42,56 @@ legend {
   font-size: 11px;
   padding: 3px 6px;
 }
+
+/* layout */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* repsonive web design */
+.img-rwd {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* button reset */
+.reset-button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.hide-text-ir {
+  text-indent: 50px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* go to top button */
+.button-goToTop {
+  cursor: pointer;
+  position: fixed;
+  z-index: 50;
+  right: 30px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: 0px 15px 14px rgba(172,85,53,0.3);
+  transform: translateY(200px) scale(0);
+  transition: all 0.8s 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.button-goToTop svg path {
+  fill: #fffcf9;
+}
+.button-goToTop svg circle {
+  fill: #E27762;
+}
+.is--btnActive {
+  transform: none;
+} 
+
+
