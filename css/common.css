@@ -43,6 +43,7 @@
 .header__logo {
     display: inline-block;
 }
+
 /* sign in & sign up */
 .nav__member-items {
     display: flex;

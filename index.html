@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/goToTop.js" async></script>
     <title>Cafe W</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
                     </ul>
                 </nav>
                 <!-- search form -->
-                <div class="search-form__container is--active">
+                <div class="search-form__container">
                     <button class="search-form__btn-open reset-button" type="button" title="검색창 띄우기">
                         <span class="ir hide-text-ir">검색창 띄우기</span>
                     </button>
@@ -87,7 +88,17 @@
             </nav>
         </div>
     </header>
-    <main id="main"></main>
+    <main id="main-content">
+        <section class="seasonal-menu"></section>
+        <section class="recommend-lecture"></section>
+        <section class="info-board"></section>
+        <section class="promotion"></section>
+        <section class="banner"></section>
+        <section class="gift-card"></section>
+        <section class="brand-value"></section>
+        <section class="brand-atmosphere"></section>
+        <section class="find-a-store"></section>
+    </main>
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__logo">
@@ -122,20 +133,5 @@
             <path d="M25 38C25.6072 38 26.1 37.5147 26.1 36.9167V15.3047L34.1037 23.5803C34.3198 23.804 34.6097 23.9167 34.9001 23.9167C35.1723 23.9167 35.4457 23.8175 35.6585 23.6177C36.0985 23.2049 36.1156 22.5192 35.6965 22.0858L26.556 12.6348C26.1402 12.2259 25.588 12 25 12C24.412 12 23.8598 12.2259 23.4259 12.6538L14.3035 22.0864C13.8844 22.5197 13.9015 23.2055 14.3415 23.6182C14.7815 24.031 15.4783 24.0142 15.8969 23.5808L23.9 15.2706V36.9167C23.9 37.5147 24.3928 38 25 38Z" fill="#0F0F0F" />
         </svg>
     </button>
-    <script>
-        window.addEventListener("scroll", function() {
-            const targetTop = document.querySelector("#header").getBoundingClientRect().bottom;
-            const scrollTop = window.scrollY;
-            console.log(targetTop<scrollTop);
-            if(scrollTop>targetTop) {
-                document.querySelector("#goToTopBtn").classList.add("is--btnActive");
-            } else {
-                document.getElementById("goToTopBtn").classList.remove('is--btnActive');
-            }
-        })
-        document.querySelector("#goToTopBtn").addEventListener("click", function(){
-            document.querySelector("#header").scrollIntoView({ behavior: "smooth" });
-        });
-    </script>
 </body>
 </html>
