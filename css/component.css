@@ -1,7 +1,7 @@
 /* --------------------------------------------
-  * 공통 클래스 */
+  * Common style */
 
-/* 숨김 제목 및 콘텐츠 */
+/* hidden text & content */
 .offscreen,
 legend {
   overflow: hidden;
@@ -13,7 +13,7 @@ legend {
   margin: -1px;
 }
 
-/* 목록 요소 기본 스타일 초기화 */
+/* ul element default style reset */
 .reset-list {
   margin-top: 0;
   margin-bottom: 0;
@@ -21,19 +21,19 @@ legend {
   list-style: none;
 }
 
-/* 반응형 콘텐츠 */
+/* responsive content */
 .respons {
   max-width: 100%;
   height: auto;
 }
 
-/* 반응형 콘텐츠 ( 가로/세로 100% 유형 )*/
+/* responsive content(width/height 100%) */
 .respons-same {
   width: 100%;
   height: 100%;
 }
 
-/* RoundBar 디자인 */
+/* RoundBar design */
 .round-bar {
   display: inline-block;
   background-color: #24388d;
@@ -61,7 +61,7 @@ legend {
   border: 0;
   padding: 0;
 }
-
+/* hide text for ir technique */
 .hide-text-ir {
   text-indent: 50px;
   display: inline-block;

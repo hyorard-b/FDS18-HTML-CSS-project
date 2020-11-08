@@ -88,12 +88,88 @@
             </nav>
         </div>
     </header>
+    <article class="notification">
+        <audio>
+            <source src="#" type="audio/mp3">해당 브라우저는 audio 태그를 지원하지 않습니다.
+        </audio>
+        <p class="notification__text">카페 w영업시간 조정안내</p>
+        <time datetime="2020-02-19">2020-02-19</time>
+        <button type="button" class="button is-close-notification" id="closeNotification" title="공지사항 닫기" aria-label="공지사항 닫기"><span class="close" aria-hidden="true">×</span></button>
+    </article>
     <main id="main-content">
-        <section class="seasonal-menu"></section>
+        <section class="seasonal-menu">
+            <h2 class="offscreen" id="seasonalMenu">시즌 메뉴</h2>
+            <div class="seasonal-menu__container">
+                <div class="seasonal-menu__texts">
+                    <p>Spring is a cup <span class="line-divider">of</span></p>
+                    <p><em class="main-menu-text">choux cream</em>봄이 왔다 커피가 설렌다</p>
+                </div>
+                <ul class="seasonal-menu__items">
+                    <li class="seasonal-menu__item">
+                        <figure>
+                            <img class="seasonal-menu__img" src="#" alt="딸기 레이어 슈 크림 프라프치노">
+                            <figcaption><span lang="en">strawberry layer chou cream frappuccino</span>딸기 레이어 슈 크림 프라프치노</figcaption>
+                        </figure>
+                    </li>
+                    <li class="seasonal-menu__item">
+                        <figure>
+                            <img class="seasonal-menu__img" src="#" alt="슈 크림 라떼">
+                            <figcaption><span lang="en">choux cream latte</span>슈 크림 라떼</figcaption>
+                        </figure>
+                    </li>
+                    <li class="seasonal-menu__item">
+                        <figure>
+                            <img class="seasonal-menu__img" src="#" alt="스프링 피치 그린 티">
+                            <figcaption><span lang="en">spring peach green tea</span>스프링 피치 그린 티</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                </div>
+                <a role="button" href="#" class="button" aria-labelledby="seasonalMenu">자세히 보기</a>
+            </div>
+        </section>
         <section class="recommend-lecture"></section>
-        <section class="info-board"></section>
-        <section class="promotion"></section>
-        <section class="banner"></section>
+        <section class="info-board">
+            <h2 class="offscreen">카페정보 게시판</h2>
+            <div class="feedback">
+                <h3 class="offscreen">손님의 후기</h3>
+                <p class="feedback__title">무엇이 중요한지 알게된시간</p>
+                <p class="feedback__descr">제가...</p>
+                <img src="#" alt="5점 만점중">5점</img>
+                <span class="custmer-name">우정민</span>
+
+            </div>
+            <div class="rank">
+                <h3 class="rank__title">카페 w 인기 강좌</h3>
+                <ul class="rank__items">
+                    <li class="rank__item"><a href="#" class="rank__link">UI 구조 &amp; 디자인</a><em class="up">상승</em></li>
+                    <li class="rank__item"><a href="#" class="rank__link">모바일 웹 UI 제작 실습</a><em class="new">새로운</em></li>
+                    <li class="rank__item"><a href="#" class="rank__link">UI 인터랙션 주니어</a><em class="down">하락</em></li>
+                    <li class="rank__item"><a href="#" class="rank__link">React 프로그래밍</a><em class="stop">멈춤</em></li>
+                </ul>
+                <button class="button rank__btn reset-button" type="button" title="랭크 더 보기">
+                    <span class="ir hide-text-ir">카페 인기 강좌 랭크 더 보기</span>
+                </button>
+            </div>
+            <a href="files/" download="카페메뉴 브로슈어" class="brochure">
+                <h3 class="brochure__title">브로슈어 다운받기</h3>
+                <img src="#" alt="카페메뉴 브로슈어 이미지" class="brochure__img">
+
+            </a>
+            <a href="#"></a>
+        </section>
+        <section class="promotion">
+            <h2 class="offscreen" id="promotion">프로모션</h2>
+            <iframe src="https://www.youtube.com/embed/cEN00wMFB2A" allowfullscreen frameborder="0" class="promotion__video"></iframe>
+        </section>
+        <section class="banner">
+            <h2 class="offscreen" id="banner">배너</h2>
+            <div class="banner__container">
+                <p class="banner__title">cafe w . reserve <span>a delicate fragance</span></p>
+                <p class="banner__desc">입 안 가득 퍼지는 산뜻하고 따듯한 봄의 향기</p>
+                <a role="button" href="#" class="button banner__btn" aria-labelledby="banner">자세히 보기</a>
+            </div>
+        </section>
         <section class="gift-card"></section>
         <section class="brand-value"></section>
         <section class="brand-atmosphere"></section>
