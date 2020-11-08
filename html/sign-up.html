@@ -97,9 +97,11 @@
             <div class="sign-up__illustration">
                 <img src="../img/sign-up-barista-girl.png" alt="" role="presentation">
             </div>
+            <!-- sign up form -->
             <form action="#" class="sign-up__form" method="POST" target="_self" aria-live="polite">
                 <fieldset>
                     <legend>회원 가입 폼</legend>
+                    <!-- email -->
                     <div class="email-container">
                         <label for="email">
                             <span class="label bold">아이디</span>
@@ -110,6 +112,7 @@
                             <input type="email" class="input" name="email" id="email" required autocomplete="on" aria-required="true" aria-describedby="emailHint" aria-invalid="false">
                         </label>
                     </div>
+                    <!-- password -->
                     <div class="password-container">
                         <label for="password">
                             <span class="label bold">패스워드</span>
@@ -120,6 +123,7 @@
                             <input type="password" class="input" name="password" id="password" minlength="8" required aria-required="true" aria-describedby="passwordHint" aria-invalid="false">
                         </label>
                     </div>
+                    <!-- confirm password -->
                     <div class="password-container">
                         <label for="confirmPassword">
                             <span class="label bold">패스워드 확인</span>
@@ -130,6 +134,7 @@
                             <input type="password" class="input" name="confirmPassword" id="confirmPassword" minlength="8" required aria-required="true" aria-describedby="confirmPasswordHint" aria-invalid="false">
                         </label>
                     </div>
+                    <!-- name -->
                     <div class="name-container">
                         <label for="name">
                             <span class="label bold">이름</span>
@@ -140,6 +145,7 @@
                             <input type="text" class="input" name="name" id="name" required autocomplete="on" aria-required="true" aria-describedby="nameHint" aria-invalid="false">
                         </label>
                     </div>
+                    <!-- sex -->
                     <div class="sex-container">
                         <span class="label bold">성별</span>
                         <strong class="asterisk">
@@ -158,6 +164,7 @@
                             </label>
                         </div>
                     </div>
+                    <!-- birth -->
                     <div class="birth-container">
                         <span class="label bold">생년월일</span>
                         <strong class="asterisk">
@@ -201,6 +208,7 @@
                             </select>
                         </label>
                     </div>
+                    <!-- telephone -->
                     <div class="tel-container">
                         <label for="tel">
                             <span class="label bold">전화번호</span>
@@ -211,6 +219,7 @@
                             <input type="tel" class="input" name="tel" id="tel" pattern="[0-9]" minlength="6" required aria-required="true" aria-describedby="telHint" aria-invalid="false">
                         </label>
                     </div>
+                    <!-- identify -->
                     <div class="identify-container">
                         <span class="label bold">인증방식</span>
                         <strong class="asterisk">
@@ -229,6 +238,7 @@
                             <a href="#" class="btn-fill" aria-labelledby="identifyIpinLabel" aria-describedby="identifyIpinText" >인증</a>
                         </div>
                     </div>
+                    <!-- nickname -->
                     <div class="nickname-container">
                         <label for="nickname">
                             <span class="label bold">닉네임</span>
@@ -236,6 +246,7 @@
                             <input type="text" class="input" name="nickname" id="nickname" aria-describedby="nicknameHint">
                         </label>
                     </div>
+                    <!-- terms of use -->
                     <div class="terms-container">
                         <span class="label bold">선택적 개인정보 수집동의 및 이용약관</span>
                         <div role="radiogroup">
@@ -269,6 +280,7 @@
                         </svg>
                         선택항목은 입력하지 않거나 동의하지 않아도 회원 가입이 가능합니다.
                     </p>
+                    <!-- form submit button -->
                     <button type="submit" class="sign-up__btn btn-fill" aria-invalid="true">회원가입</button>
                 </fieldset>
             </form>
