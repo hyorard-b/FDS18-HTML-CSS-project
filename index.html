@@ -10,7 +10,7 @@
 <body>
     <div class="skip-nav" tabindex="0"><a href="#menuNav">메뉴 바로가기</a></div>
     <div class="skip-nav" tabindex="1"><a href="#main">콘텐츠 바로가기</a></div>
-    <header class="header"id="header">
+    <header class="header" id="header">
         <div class="header__container container">
             <h1 class="offscreen">Cafe W</h1>
             <div class="sub-nav-container container">
@@ -108,35 +108,153 @@
                     <li class="seasonal-menu__item">
                         <figure>
                             <img class="seasonal-menu__img" src="#" alt="딸기 레이어 슈 크림 프라프치노">
-                            <figcaption><span lang="en">strawberry layer chou cream frappuccino</span>딸기 레이어 슈 크림 프라프치노</figcaption>
+                            <figcaption><em lang="en">strawberry layer chou cream frappuccino</em>딸기 레이어 슈 크림 프라프치노</figcaption>
                         </figure>
                     </li>
                     <li class="seasonal-menu__item">
                         <figure>
                             <img class="seasonal-menu__img" src="#" alt="슈 크림 라떼">
-                            <figcaption><span lang="en">choux cream latte</span>슈 크림 라떼</figcaption>
+                            <figcaption><em lang="en">choux cream latte</em>슈 크림 라떼</figcaption>
                         </figure>
                     </li>
                     <li class="seasonal-menu__item">
                         <figure>
                             <img class="seasonal-menu__img" src="#" alt="스프링 피치 그린 티">
-                            <figcaption><span lang="en">spring peach green tea</span>스프링 피치 그린 티</figcaption>
+                            <figcaption><em lang="en">spring peach green tea</em>스프링 피치 그린 티</figcaption>
                         </figure>
                     </li>
                 </ul>
-                </div>
-                <a role="button" href="#" class="button" aria-labelledby="seasonalMenu">자세히 보기</a>
             </div>
+            <a role="button" href="#" class="button" aria-labelledby="seasonalMenu">자세히 보기</a>
         </section>
-        <section class="recommend-lecture"></section>
+        <section class="recommend-lecture tab-interface">
+            <h2 class="offscreen">인기 강좌</h2>
+            <ul class="tab-list" role="tablist">
+                <li id="tab1" role="tab" aria-controls="lecture1" aria-selected="true" tabindex="0">멀티 캠퍼스 추천 강좌</li>
+                <li id="tab2" role="tab" aria-controls="lecture2" aria-selected="false" tabindex="0">이듬 블랜디드 러닝 추천강좌</li>
+            </ul>
+            <div class="tab-contents">
+                <section id="lecture1" role="tabpanel" aria-labelledby="tab1">
+                    <figure id="lectureWebResponsiveDesign">
+                        <img src="#" alt="반응형 웹디자인 전략 책카피 이미지" />
+                        <figcaption><em lang='en'>responsive web design strategies</em>반응형 웹디자인 전략</figcaption>
+                        <a href="#" role="button" aria-haspopup="dialog" aria-pressed="false">강의 정보</a>
+                    </figure>
+                    <div class="recommed-lecture__item--detail" role="dialog" aria-modal="false" aria-labelledby="lectureWebResponsiveDesign">
+                        <h3 class="recommed-lecture__title"><span lang="en">git &amp; html/css</span></h3>
+                        <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                        <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점</img>
+                        <table class="news__press-table">
+                            <caption class="a11y-hidden">이디야 소식 안내</caption>
+                            <thead>
+                              <tr>
+                                <th scope="col">순서</th>
+                                <th scope="col">내용</th>
+                                <th scope="col">날짜</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>999</td>
+                                <td>
+                                  <figure class="press-thumbnail">
+                                    <img src="../images/news-thumbnail.jpg" alt="">
+                                  </figure>
+                                  <dl class="press-article">
+                                    <dt data-original-text="[MTN] 이디야커피, 조각 케이크 2종 출시…디저트 강화">[MTN] 이디야커피, 조각 케이크 2종 출시…디저트...</dt>
+                                    <dd data-original-text="이디야커피가 조각 케이크 신제품 2종과 기존 조각 케이크 3종을 리뉴얼해 출시하며 디저트 케이크 라인업을 강화">이디야커피가 조각 케이크 신제품 2종과 기존 조각 케이크 3종을 리뉴얼해 출시하며 디저트 케이크 라인업을 ...</dd>
+                                  </dl>
+                                </td>
+                                <td><time class="press-date" datetime="2020-09-08T17:30:45">2020.09.08</time></td>
+                              </tr>
+                              <tr>
+                                <td>998</td>
+                                <td>
+                                  <figure class="press-thumbnail">
+                                    <img src="../images/ediya-table-thumb.jpg" alt="">
+                                  </figure>
+                                  <dl class="press-article">
+                                    <dt data-original-text="[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차이즈' 선정">[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차...</dt>
+                                    <dd data-original-text="이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차이즈`에 ...">이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차...</dd>
+                                  </dl>
+                                </td>
+                                <td><time class="press-date" datetime="2020-09-08T17:30:45">2020.09.08</time></td>
+                              </tr>
+                              <tr>
+                                <td>997</td>
+                                <td>
+                                  <figure class="press-thumbnail">
+                                    <img src="../images/ediya-table-thumb.jpg" alt="">
+                                  </figure>
+                                  <dl class="press-article">
+                                    <dt data-original-text="[MTN] 이디야커피, 조각 케이크 2종 출시…디저트 강화">[MTN] 이디야커피, 조각 케이크 2종 출시…디저트...</dt>
+                                    <dd data-original-text="이디야커피가 조각 케이크 신제품 2종과 기존 조각 케이크 3종을 리뉴얼해 출시하며 디저트 케이크 라인업을 강화">이디야커피가 조각 케이크 신제품 2종과 기존 조각 케이크 3종을 리뉴얼해 출시하며 디저트 케이크 라인업을 ...</dd>
+                                  </dl>
+                                </td>
+                                <td><time class="press-date" datetime="2020-09-08T17:30:45">2020.09.08</time></td>
+                              </tr>
+                              <tr>
+                                <td>996</td>
+                                <td>
+                                  <figure class="press-thumbnail">
+                                    <img src="../images/ediya-table-thumb.jpg" alt="">
+                                  </figure>
+                                  <dl class="press-article">
+                                    <dt data-original-text="[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차이즈' 선정">[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차...</dt>
+                                    <dd data-original-text="이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차이즈`에 ...">이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차...</dd>
+                                  </dl>
+                                </td>
+                                <td><time class="press-date" datetime="2020-09-08T17:30:45">2020.09.08</time></td>
+                              </tr>
+                              <tr>
+                                <td>995</td>
+                                <td>
+                                  <figure class="press-thumbnail">
+                                    <img src="../images/ediya-table-thumb.jpg" alt="">
+                                  </figure>
+                                  <dl class="press-article">
+                                    <dt data-original-text="[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차이즈' 선정">[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차...</dt>
+                                    <dd data-original-text="이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차이즈`에 ...">이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차...</dd>
+                                  </dl>
+                                </td>
+                                <td><time class="press-date" datetime="2020-09-08T17:30:45">2020.09.08</time></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        <button type="button" class="button is-close-panel" title="닫기" aria-label="음료 정보 패널 닫기">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                </section>
+                <section id="lecture2" role="tabpanel" aria-labelledby="tab2">
+                    <p>
+                        캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가
+                        실제 표시되는 방법을 기술하는 언어로, HTML과 XHTML에 주로 쓰이며,
+                        XML에서도 사용할 수 있다.
+                    </p>
+                    <a href="#">상세 보기</a>
+                </section>
+            </div>  
+        </section>
         <section class="info-board">
             <h2 class="offscreen">카페정보 게시판</h2>
             <div class="feedback">
-                <h3 class="offscreen">손님의 후기</h3>
-                <p class="feedback__title">무엇이 중요한지 알게된시간</p>
-                <p class="feedback__descr">제가...</p>
-                <img src="#" alt="5점 만점중">5점</img>
-                <span class="custmer-name">우정민</span>
+                <ul class="feedback__items">
+                    <li class="feedback__item">
+                        <h3 class="offscreen">손님의 후기</h3>
+                        <p class="feedback__title">무엇이 중요한지 알게된시간</p>
+                        <p class="feedback__descr">제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
+                        <img src="#" alt="별점 5점만점중 5점"><span class="offscreen">5점 만점중</span>5점</img>
+                        <span class="custmer-name">우정민</span>
+                    </li>
+                    <li class="feedback__item">
+                        <h3 class="offscreen">손님의 후기</h3>
+                        <p class="feedback__title">정말 행복했습니다.</p>
+                        <p class="feedback__descr">제가 카페에서 커피를 먹엇는데 너무 많이 맛있었어요. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
+                        <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점</img>
+                        <span class="custmer-name">강은진</span>
+                    </li>
+                </ul>
 
             </div>
             <div class="rank">
