@@ -89,8 +89,10 @@
 [name="searchInput"] {
     background: transparent;
     border: 0;
+    width: 200px;
     border-bottom: 1px solid #fffcf9;
-    padding: 10px 40px 10px 20px;
+    padding: 10px 0 10px 10px;
+    margin-right: 42px;
 }
  
 /* main menu */
