@@ -93,7 +93,11 @@ legend {
 .is--btnActive {
   transform: none;
 } 
-
+.button-stroke {
+  padding: 4px 20px;
+  border: 1px solid currentColor;
+  font-size: 1.6rem;
+}
 .text-bold {
   font-weight: 700;
 }
