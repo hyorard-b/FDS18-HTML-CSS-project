@@ -127,112 +127,156 @@
             </div>
             <a role="button" href="#" class="button" aria-labelledby="seasonalMenu">자세히 보기</a>
         </section>
-        <section class="recommend-lecture tab-interface">
+        <section class="recommend-lecture">
             <h2 class="offscreen">인기 강좌</h2>
-            <ul class="tab-list" role="tablist">
-                <li id="tab1" role="tab" aria-controls="lecture1" aria-selected="true" tabindex="0">멀티 캠퍼스 추천 강좌</li>
-                <li id="tab2" role="tab" aria-controls="lecture2" aria-selected="false" tabindex="0">이듬 블랜디드 러닝 추천강좌</li>
+            <ul class="recommend-lecture__tab-list" role="tablist">
+                <li id="tab1" role="tab" aria-controls="mutiCampLectures" aria-selected="true" tabindex="0">멀티 캠퍼스 추천 강좌</li>
+                <li id="tab2" role="tab" aria-controls="eUIDLectures" aria-selected="false" tabindex="0">이듬 블랜디드 러닝 추천강좌</li>
             </ul>
-            <div class="tab-contents">
-                <section id="lecture1" role="tabpanel" aria-labelledby="tab1">
-                    <figure id="lectureWebResponsiveDesign">
-                        <img src="#" alt="반응형 웹디자인 전략 책카피 이미지" />
-                        <figcaption><em lang='en'>responsive web design strategies</em>반응형 웹디자인 전략</figcaption>
-                        <a href="#" role="button" aria-haspopup="dialog" aria-pressed="false">강의 정보</a>
-                    </figure>
-                    <div class="recommed-lecture__item--detail" role="dialog" aria-modal="false" aria-labelledby="lectureWebResponsiveDesign">
-                        <h3 class="recommed-lecture__title"><span lang="en">git &amp; html/css</span></h3>
-                        <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
-                        <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점</img>
-                        <table class="news__press-table">
-                            <caption class="a11y-hidden">이디야 소식 안내</caption>
-                            <thead>
-                              <tr>
-                                <th scope="col">순서</th>
-                                <th scope="col">내용</th>
-                                <th scope="col">날짜</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>999</td>
-                                <td>
-                                  <figure class="press-thumbnail">
-                                    <img src="../images/news-thumbnail.jpg" alt="">
-                                  </figure>
-                                  <dl class="press-article">
-                                    <dt data-original-text="[MTN] 이디야커피, 조각 케이크 2종 출시…디저트 강화">[MTN] 이디야커피, 조각 케이크 2종 출시…디저트...</dt>
-                                    <dd data-original-text="이디야커피가 조각 케이크 신제품 2종과 기존 조각 케이크 3종을 리뉴얼해 출시하며 디저트 케이크 라인업을 강화">이디야커피가 조각 케이크 신제품 2종과 기존 조각 케이크 3종을 리뉴얼해 출시하며 디저트 케이크 라인업을 ...</dd>
-                                  </dl>
-                                </td>
-                                <td><time class="press-date" datetime="2020-09-08T17:30:45">2020.09.08</time></td>
-                              </tr>
-                              <tr>
-                                <td>998</td>
-                                <td>
-                                  <figure class="press-thumbnail">
-                                    <img src="../images/ediya-table-thumb.jpg" alt="">
-                                  </figure>
-                                  <dl class="press-article">
-                                    <dt data-original-text="[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차이즈' 선정">[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차...</dt>
-                                    <dd data-original-text="이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차이즈`에 ...">이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차...</dd>
-                                  </dl>
-                                </td>
-                                <td><time class="press-date" datetime="2020-09-08T17:30:45">2020.09.08</time></td>
-                              </tr>
-                              <tr>
-                                <td>997</td>
-                                <td>
-                                  <figure class="press-thumbnail">
-                                    <img src="../images/ediya-table-thumb.jpg" alt="">
-                                  </figure>
-                                  <dl class="press-article">
-                                    <dt data-original-text="[MTN] 이디야커피, 조각 케이크 2종 출시…디저트 강화">[MTN] 이디야커피, 조각 케이크 2종 출시…디저트...</dt>
-                                    <dd data-original-text="이디야커피가 조각 케이크 신제품 2종과 기존 조각 케이크 3종을 리뉴얼해 출시하며 디저트 케이크 라인업을 강화">이디야커피가 조각 케이크 신제품 2종과 기존 조각 케이크 3종을 리뉴얼해 출시하며 디저트 케이크 라인업을 ...</dd>
-                                  </dl>
-                                </td>
-                                <td><time class="press-date" datetime="2020-09-08T17:30:45">2020.09.08</time></td>
-                              </tr>
-                              <tr>
-                                <td>996</td>
-                                <td>
-                                  <figure class="press-thumbnail">
-                                    <img src="../images/ediya-table-thumb.jpg" alt="">
-                                  </figure>
-                                  <dl class="press-article">
-                                    <dt data-original-text="[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차이즈' 선정">[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차...</dt>
-                                    <dd data-original-text="이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차이즈`에 ...">이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차...</dd>
-                                  </dl>
-                                </td>
-                                <td><time class="press-date" datetime="2020-09-08T17:30:45">2020.09.08</time></td>
-                              </tr>
-                              <tr>
-                                <td>995</td>
-                                <td>
-                                  <figure class="press-thumbnail">
-                                    <img src="../images/ediya-table-thumb.jpg" alt="">
-                                  </figure>
-                                  <dl class="press-article">
-                                    <dt data-original-text="[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차이즈' 선정">[매일경제] 이디야커피, 공정거래조정원 '착한 프랜차...</dt>
-                                    <dd data-original-text="이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차이즈`에 ...">이디야커피는 가맹점을 위해 상생정책을 시행한 노력을 인정받아 25일 공정거래조정원이 인증하는 `착한 프랜차...</dd>
-                                  </dl>
-                                </td>
-                                <td><time class="press-date" datetime="2020-09-08T17:30:45">2020.09.08</time></td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        <button type="button" class="button is-close-panel" title="닫기" aria-label="음료 정보 패널 닫기">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
+            <div class="recommend-lecture__tab-contents">
+                <section id="mutiCampLectures" role="tabpanel" aria-labelledby="tab1">
+                    <section class="recommend-lecture__carousel" aria-label=" 멀티 캠퍼스 인기강좌 슬라이더 쇼">
+                        <ul class="recommend-lecture__viewport">
+                            <li class="recommend-lecture__slide1">
+                                <article class="recommend-lecture__tab-content">
+                                    <div class="recommend-lecture__content-container" id="lectureWebResponsiveDesign">
+                                        <img src="#" alt="반응형 웹디자인 전략 책카피 이미지" />
+                                        <p><em lang='en'>responsive web design strategies</em>반응형 웹디자인 전략</p>
+                                        <a href="#" role="button" aria-haspopup="dialog" aria-pressed="false">강의 정보</a>
+                                    </div>
+                                    <div class="recommend-lecture__content-detail" role="dialog" aria-modal="false" aria-labelledby="lectureWebResponsiveDesign">
+                                        <h3 class="recommend-lecture__content-title"><span lang="en">git &amp; html/css</span></h3>
+                                        <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                                        <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점
+                                        <dl class="recommend-lecture__info-table">
+                                            <dt>학습시간</dt>
+                                            <dd>09:00 ~ 17:00 (28시간)</dd>
+                                            <dt>난이도</dt>
+                                            <dd>초급</dd>
+                                            <dt>교육비 지원</dt>
+                                            <dd>고용보험 비환급</dd>
+                                            <dt>평가항목</dt>
+                                            <dd>출석률 100%</dd>
+                                            <dt>수료기준</dt>
+                                            <dd>총점 80점 이상시 수료</dd>
+                                            <dt>정원</dt>
+                                            <dd>24명</dd>
+                                            <dt>교재정보</dt>
+                                            <dd>입문자를 위한 반응형 웹디자인 전략(30,000원)</dd>
+                                          </dl>
+                                        <button type="button" class="button is-close-panel" title="닫기" aria-label="웹사이트 개발과 디자인 기초강좌 자료패널 닫기">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recommend-lecture__slide2">
+                                <article class="recommend-lecture__tab-content">
+                                    <div class="recommend-lecture__content-container" id="gitHTMLCSSGuideBook">
+                                        <img src="#" alt="입문자를 위한 GIT과 html css 가이드" />
+                                        <p><em lang='en'>git&amp;html/css</em>입문자를 위한 GIT과 html&amp;css</p>
+                                        <a href="#" role="button" aria-haspopup="dialog" aria-pressed="false">강의 정보</a>
+                                    </div>
+                                    <div class="recommend-lecture__content-detail" role="dialog" aria-modal="false" aria-labelledby="gitHTMLCSSGuideBook">
+                                        <h3 class="recommend-lecture__content-title"><span lang="en">git &amp; html/css</span></h3>
+                                        <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                                        <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점
+                                        <dl class="recommend-lecture__info-table">
+                                            <dt>학습시간</dt>
+                                            <dd>09:00 ~ 17:00 (28시간)</dd>
+                                            <dt>난이도</dt>
+                                            <dd>초급</dd>
+                                            <dt>교육비 지원</dt>
+                                            <dd>고용보험 비환급</dd>
+                                            <dt>평가항목</dt>
+                                            <dd>출석률 100%</dd>
+                                            <dt>수료기준</dt>
+                                            <dd>총점 80점 이상시 수료</dd>
+                                            <dt>정원</dt>
+                                            <dd>20명</dd>
+                                            <dt>교재정보</dt>
+                                            <dd>입문자를 위한 GIT과 HTML&amp;CSS<br>HTML&amp;CSS (35,000원)</dd>
+                                          </dl>
+                                        <button type="button" class="button is-close-panel" title="닫기" aria-label="입문자를 위한 GIT과 html&amp;css 닫기">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
                 </section>
-                <section id="lecture2" role="tabpanel" aria-labelledby="tab2">
-                    <p>
-                        캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가
-                        실제 표시되는 방법을 기술하는 언어로, HTML과 XHTML에 주로 쓰이며,
-                        XML에서도 사용할 수 있다.
-                    </p>
-                    <a href="#">상세 보기</a>
+                <section id="eUIDLectures" role="tabpanel" aria-labelledby="tab2">
+                    <section class="recommend-lecture__carousel" aria-label=" 멀티 캠퍼스 인기강좌 슬라이더 쇼">
+                        <ul class="recommend-lecture__viewport">
+                            <li class="recommend-lecture__slide1">
+                                <article class="recommend-lecture__tab-content">
+                                    <div class="recommend-lecture__content-container" id="lectureWebResponsiveDesign2">
+                                        <img src="#" alt="반응형 웹디자인 전략 책카피 이미지" />
+                                        <p><em lang='en'>responsive web design strategies</em>반응형 웹디자인 전략</p>
+                                        <a href="#" role="button" aria-haspopup="dialog" aria-pressed="false">강의 정보</a>
+                                    </div>
+                                    <div class="recommend-lecture__content-detail" role="dialog" aria-modal="false" aria-labelledby="lectureWebResponsiveDesign2">
+                                        <h3 class="recommend-lecture__content-title"><span lang="en">git &amp; html/css</span></h3>
+                                        <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                                        <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점
+                                        <dl class="recommend-lecture__info-table">
+                                            <dt>학습시간</dt>
+                                            <dd>09:00 ~ 17:00 (28시간)</dd>
+                                            <dt>난이도</dt>
+                                            <dd>초급</dd>
+                                            <dt>교육비 지원</dt>
+                                            <dd>고용보험 비환급</dd>
+                                            <dt>평가항목</dt>
+                                            <dd>출석률 100%</dd>
+                                            <dt>수료기준</dt>
+                                            <dd>총점 80점 이상시 수료</dd>
+                                            <dt>정원</dt>
+                                            <dd>24명</dd>
+                                            <dt>교재정보</dt>
+                                            <dd>입문자를 위한 반응형 웹디자인 전략(30,000원)</dd>
+                                        </dl>
+                                        <button type="button" class="button is-close-panel" title="닫기" aria-label="웹사이트 개발과 디자인 기초강좌 자료패널 닫기">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="recommend-lecture__slide2">
+                                <article class="recommend-lecture__tab-content">
+                                    <div class="recommend-lecture__content-container" id="gitHTMLCSSGuideBook2">
+                                        <img src="#" alt="입문자를 위한 GIT과 html css 가이드"/>
+                                        <p><em lang='en'>git&amp;html/css</em>입문자를 위한 GIT과 html&amp;css</p>
+                                        <a href="#" role="button" aria-haspopup="dialog" aria-pressed="false">강의 정보</a>
+                                    </div>
+                                    <div class="recommend-lecture__content-detail" role="dialog" aria-modal="false" aria-labelledby="gitHTMLCSSGuideBook2">
+                                        <h3 class="recommend-lecture__content-title"><span lang="en">git &amp; html/css</span></h3>
+                                        <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                                        <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점
+                                        <dl class="recommend-lecture__info-table">
+                                            <dt>학습시간</dt>
+                                            <dd>09:00 ~ 17:00 (28시간)</dd>
+                                            <dt>난이도</dt>
+                                            <dd>초급</dd>
+                                            <dt>교육비 지원</dt>
+                                            <dd>고용보험 비환급</dd>
+                                            <dt>평가항목</dt>
+                                            <dd>출석률 100%</dd>
+                                            <dt>수료기준</dt>
+                                            <dd>총점 80점 이상시 수료</dd>
+                                            <dt>정원</dt>
+                                            <dd>20명</dd>
+                                            <dt>교재정보</dt>
+                                            <dd>입문자를 위한 GIT과 HTML&amp;CSS<br>HTML&amp;CSS (35,000원)</dd>
+                                        </dl>
+                                        <button type="button" class="button is-close-panel" title="닫기" aria-label="입문자를 위한 GIT과 html&amp;css 닫기">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </section>
                 </section>
             </div>  
         </section>
@@ -244,18 +288,17 @@
                         <h3 class="offscreen">손님의 후기</h3>
                         <p class="feedback__title">무엇이 중요한지 알게된시간</p>
                         <p class="feedback__descr">제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
-                        <img src="#" alt="별점 5점만점중 5점"><span class="offscreen">5점 만점중</span>5점</img>
+                        <img src="#" alt="별점 5점만점중 5점"><span class="offscreen">5점 만점중</span>5점
                         <span class="custmer-name">우정민</span>
                     </li>
                     <li class="feedback__item">
                         <h3 class="offscreen">손님의 후기</h3>
                         <p class="feedback__title">정말 행복했습니다.</p>
                         <p class="feedback__descr">제가 카페에서 커피를 먹엇는데 너무 많이 맛있었어요. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
-                        <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점</img>
+                        <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점
                         <span class="custmer-name">강은진</span>
                     </li>
                 </ul>
-
             </div>
             <div class="rank">
                 <h3 class="rank__title">카페 w 인기 강좌</h3>
@@ -278,7 +321,7 @@
         </section>
         <section class="promotion">
             <h2 class="offscreen" id="promotion">프로모션</h2>
-            <iframe src="https://www.youtube.com/embed/cEN00wMFB2A" allowfullscreen frameborder="0" class="promotion__video"></iframe>
+            <iframe src="https://www.youtube.com/embed/cEN00wMFB2A" class="promotion__video"></iframe>
         </section>
         <section class="banner">
             <h2 class="offscreen" id="banner">배너</h2>
