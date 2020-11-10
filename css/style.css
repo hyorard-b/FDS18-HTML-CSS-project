@@ -11,4 +11,10 @@
 
 /* Component style */
 @import url(./common.css);
-@import url(./variable.css)
+@import url(./variable.css);
+
+/* curriculmn section */
+@import url(./curriculumn.css);
+
+/* find-a-store section */
+@import url(./find-a-store.css);
