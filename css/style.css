@@ -11,4 +11,9 @@
 
 /* Component style */
 @import url(./common.css);
-@import url(./variable.css)
+@import url(./variable.css);
+
+/* Section style */
+
+@import url(./gift-card.css);
+@import url(./brand-value.css);
