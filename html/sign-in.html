@@ -89,20 +89,26 @@
         </div>
     </header>
     <main id="main-content">
-        <section class="sign-in">
-            <h2 class="sign-in__heading text-bold">SIGN IN</h2>
+        <section class="sign-in" aria-labelledby="signIn">
+            <h2 class="sign-in__heading text-bold" id="signIn">SIGN IN</h2>
             <p class="sign-in__welcome-text">환영합니다. 이 곳은 CAFE W 입니다.</p>
             <form action="#" method="GET" class="sign-in-form">
                 <fieldset>
                     <legend>회원가입 영역</legend>
-                    <label for="userEmail" class="sign-in-form__label">아이디</label>
-                    <input type="email" name="userEmail" id="userEmail" placeholder="사용자 계정을 입력합니다." class="sign-in-form__email">
-                    <label for="userPassword" class="sign-in-form__label">패스워드</label>
-                    <input type="password" name="userPassword" id="userPassword" placeholder="사용자 계정 비밀번호를 입력합니다." class="sign-in-form__password">
-                    <label for="saveEmail" class="sign-in-form__label-save-email">아이디 저장</label>
-                    <input type="checkbox" id="saveEmail" name="saveEmail" class="sign-in-form__radio-save-email" checked>
-                    <label for="maintainLogin" class="sign-in-form__label-maintain-login">로그인 상태 유지</label>
-                    <input type="checkbox" id="maintainLogin" name="maintainLogin" class="sign-in-form__radio-maintain-login">
+                    <div class="sign-in-form__user-email">
+                        <label for="userEmail" class="sign-in-form__label">아이디</label>
+                        <input type="email" name="userEmail" id="userEmail" placeholder="사용자 계정을 입력합니다." class="sign-in-form__email">
+                    </div>
+                    <div class="sign-in-form__user-password">
+                        <label for="userPassword" class="sign-in-form__label">패스워드</label>
+                        <input type="password" name="userPassword" id="userPassword" placeholder="사용자 계정 비밀번호를 입력합니다." class="sign-in-form__password">
+                    </div>
+                    <div class="sign-in-form__user-save">
+                        <label for="saveEmail" class="sign-in-form__label-save-email">아이디 저장</label>
+                        <input type="checkbox" id="saveEmail" name="saveEmail" class="sign-in-form__radio-save-email" checked>
+                        <label for="saveLogin" class="sign-in-form__label-save-login">로그인 상태 유지</label>
+                        <input type="checkbox" id="saveLogin" name="saveLogin" class="sign-in-form__radio-save-login">
+                    </div>
                     <button class="sign-in-form__btn-sumbit reset-button" type="submit" title="로그인하기">로그인</button>
                 </fieldset>
             </form>
