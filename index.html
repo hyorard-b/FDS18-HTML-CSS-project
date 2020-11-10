@@ -10,7 +10,16 @@
 <body>
     <div class="skip-nav" tabindex="0"><a href="#menuNav">메뉴 바로가기</a></div>
     <div class="skip-nav" tabindex="1"><a href="#main">콘텐츠 바로가기</a></div>
-    <header class="header"id="header">
+    <article class="notification">
+        <h2 class="offscreen">공지사항</h2>
+        <audio>
+            <source src="#" type="audio/mp3">해당 브라우저는 audio 태그를 지원하지 않습니다.
+        </audio>
+        <p class="notification__title">카페 w영업시간 조정안내</p>
+        <time datetime="2020-02-19">2020-02-19</time>
+        <button type="button" class="button is-close-notification" id="closeNotification" title="공지사항 닫기" aria-label="공지사항 닫기"><span class="close" aria-hidden="true">×</span></button>
+    </article>
+    <header class="header" id="header">
         <div class="header__container container">
             <h1 class="offscreen">Cafe W</h1>
             <div class="sub-nav-container container">
@@ -24,7 +33,7 @@
                     </ul>
                 </nav>
                 <!-- search form -->
-                <div class="search-form__container">
+                <div class="search-form-container">
                     <button class="search-form__btn-open reset-button" type="button" title="검색창 띄우기">
                         <span class="ir hide-text-ir">검색창 띄우기</span>
                     </button>
@@ -89,11 +98,235 @@
         </div>
     </header>
     <main id="main-content">
-        <section class="seasonal-menu"></section>
-        <section class="recommend-lecture"></section>
-        <section class="info-board"></section>
-        <section class="promotion"></section>
-        <section class="banner"></section>
+        <section class="seasonal-menu">
+            <h2 class="offscreen" id="seasonalMenu">시즌 메뉴</h2>
+            <div class="seasonal-menu__container">
+                <div class="seasonal-menu__headline">
+                    <p lang='en'>Spring is a cup <span class="line-divider">of</span><em class="text-bold">choux cream</em></p>
+                    <p>봄이 왔다 커피가 설렌다</p>
+                </div>
+                <ul class="seasonal-menu__items">
+                    <li class="seasonal-menu__item">
+                        <figure>
+                            <img class="seasonal-menu__img" src="#" alt="딸기 레이어 슈 크림 프라프치노">
+                            <figcaption><b lang="en">strawberry layer chou cream frappuccino</b>딸기 레이어 슈 크림 프라프치노</figcaption>
+                        </figure>
+                    </li>
+                    <li class="seasonal-menu__item">
+                        <figure>
+                            <img class="seasonal-menu__img" src="#" alt="슈 크림 라떼">
+                            <figcaption><b lang="en">choux cream latte</b>슈 크림 라떼</figcaption>
+                        </figure>
+                    </li>
+                    <li class="seasonal-menu__item">
+                        <figure>
+                            <img class="seasonal-menu__img" src="#" alt="스프링 피치 그린 티">
+                            <figcaption><b lang="en">spring peach green tea</b>스프링 피치 그린 티</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="button" aria-labelledby="seasonalMenu">자세히 보기</a>
+        </section>
+        <section class="recommend-lecture">
+            <h2 class="offscreen">인기 강좌</h2>
+            <ul class="recommend-lecture__tab-list" role="tablist">
+                <li id="tab1" role="tab" aria-controls="mutiCampLectures" aria-selected="true" tabindex="0">멀티 캠퍼스 추천 강좌</li>
+                <li id="tab2" role="tab" aria-controls="eUIDLectures" aria-selected="false" tabindex="0">이듬 블랜디드 러닝 추천강좌</li>
+            </ul>
+            <section id="mutiCampLectures" role="tabpanel" aria-labelledby="tab1" class="recommend-lecture__tab-contents">
+                <section class="recommend-lecture__carousel" aria-label="멀티 캠퍼스 인기강좌 슬라이더 쇼">
+                    <ul class="recommend-lecture__viewport">
+                        <li class="recommend-lecture__slide1">
+                            <article class="recommend-lecture__tab-content">
+                                <div class="recommend-lecture__content-container" id="lectureWebResponsiveDesign">
+                                    <p><b lang='en'>responsive web design strategies</b>반응형 웹디자인 전략</p>
+                                    <a href="#" role="button" aria-haspopup="true" aria-pressed="false">강의 정보</a>
+                                </div>
+                                <div class="recommend-lecture__content-detail" role="article" aria-modal="false" aria-labelledby="lectureWebResponsiveDesign">
+                                    <h3 class="recommend-lecture__content-title" lang='en'>git &amp; html/css</h3>
+                                    <p class="recommend-lecture__content-desc">입문자를 위한 GIT과 HTML&amp;CSS</p>
+                                    <p class="recommend-lecture__content-review"><img src="#" alt="별점 5점만점중 4점">4점</p>
+                                    <dl class="recommend-lecture__info-table">
+                                        <dt>학습시간</dt>
+                                        <dd>09:00 ~ 17:00 (28시간)</dd>
+                                        <dt>난이도</dt>
+                                        <dd>초급</dd>
+                                        <dt>교육비 지원</dt>
+                                        <dd>고용보험 비환급</dd>
+                                        <dt>평가항목</dt>
+                                        <dd>출석률 100%</dd>
+                                        <dt>수료기준</dt>
+                                        <dd>총점 80점 이상시 수료</dd>
+                                        <dt>정원</dt>
+                                        <dd>24명</dd>
+                                        <dt>교재정보</dt>
+                                        <dd>입문자를 위한 반응형 웹디자인 전략(30,000원)</dd>
+                                    </dl>
+                                    <button type="button" class="button is-close-panel" title="닫기" aria-label="웹사이트 개발과 디자인 기초강좌 자료패널 닫기">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="recommend-lecture__slide2">
+                            <article class="recommend-lecture__tab-content">
+                                <div class="recommend-lecture__content-container" id="gitHTMLCSSGuideBook">
+                                    <p><b lang='en'>git&amp;html/css</b>입문자를 위한 GIT과 html&amp;css</p>
+                                    <a href="#" role="button" aria-haspopup="true" aria-pressed="false">강의 정보</a>
+                                </div>
+                                <div class="recommend-lecture__content-detail" role="article" aria-modal="false" aria-labelledby="gitHTMLCSSGuideBook">
+                                    <h3 class="recommend-lecture__content-title"><span lang="en">git &amp; html/css</span></h3>
+                                    <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                                    <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점
+                                    <dl class="recommend-lecture__info-table">
+                                        <dt>학습시간</dt>
+                                        <dd>09:00 ~ 17:00 (28시간)</dd>
+                                        <dt>난이도</dt>
+                                        <dd>초급</dd>
+                                        <dt>교육비 지원</dt>
+                                        <dd>고용보험 비환급</dd>
+                                        <dt>평가항목</dt>
+                                        <dd>출석률 100%</dd>
+                                        <dt>수료기준</dt>
+                                        <dd>총점 80점 이상시 수료</dd>
+                                        <dt>정원</dt>
+                                        <dd>20명</dd>
+                                        <dt>교재정보</dt>
+                                        <dd>입문자를 위한 GIT과 HTML&amp;CSS<br>HTML&amp;CSS (35,000원)</dd>
+                                        </dl>
+                                    <button type="button" class="button is-close-panel" title="닫기" aria-label="입문자를 위한 GIT과 html&amp;css 닫기">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section id="eUIDLectures" role="tabpanel" aria-labelledby="tab2">
+                <section class="recommend-lecture__carousel" aria-label=" 멀티 캠퍼스 인기강좌 슬라이더 쇼">
+                    <ul class="recommend-lecture__viewport">
+                        <li class="recommend-lecture__slide1">
+                            <article class="recommend-lecture__tab-content">
+                                <div class="recommend-lecture__content-container" id="lectureWebResponsiveDesign2">
+                                    <p><b lang='en'>responsive web design strategies</b>반응형 웹디자인 전략</p>
+                                    <a href="#" role="button" aria-haspopup="true" aria-pressed="false">강의 정보</a>
+                                </div>
+                                <div class="recommend-lecture__content-detail" role="article" aria-modal="false" aria-labelledby="lectureWebResponsiveDesign2">
+                                    <h3 class="recommend-lecture__content-title"><span lang="en">git &amp; html/css</span></h3>
+                                    <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                                    <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점
+                                    <dl class="recommend-lecture__info-table">
+                                        <dt>학습시간</dt>
+                                        <dd>09:00 ~ 17:00 (28시간)</dd>
+                                        <dt>난이도</dt>
+                                        <dd>초급</dd>
+                                        <dt>교육비 지원</dt>
+                                        <dd>고용보험 비환급</dd>
+                                        <dt>평가항목</dt>
+                                        <dd>출석률 100%</dd>
+                                        <dt>수료기준</dt>
+                                        <dd>총점 80점 이상시 수료</dd>
+                                        <dt>정원</dt>
+                                        <dd>24명</dd>
+                                        <dt>교재정보</dt>
+                                        <dd>입문자를 위한 반응형 웹디자인 전략(30,000원)</dd>
+                                    </dl>
+                                    <button type="button" class="button is-close-panel" title="닫기" aria-label="웹사이트 개발과 디자인 기초강좌 자료패널 닫기">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="recommend-lecture__slide2">
+                            <article class="recommend-lecture__tab-content">
+                                <div class="recommend-lecture__content-container" id="gitHTMLCSSGuideBook2">
+                                    <p><b lang='en'>git&amp;html/css</b>입문자를 위한 GIT과 html&amp;css</p>
+                                    <a href="#" role="button" aria-haspopup="true" aria-pressed="false">강의 정보</a>
+                                </div>
+                                <div class="recommend-lecture__content-detail" role="article" aria-modal="false" aria-labelledby="gitHTMLCSSGuideBook2">
+                                    <h3 class="recommend-lecture__content-title"><span lang="en">git &amp; html/css</span></h3>
+                                    <p>입문자를 위한 GIT과 HTML&amp;CSS</p>
+                                    <img src="#" alt="별점 5점만점중 4점"><span class="offscreen">5점 만점중</span>4점
+                                    <dl class="recommend-lecture__info-table">
+                                        <dt>학습시간</dt>
+                                        <dd>09:00 ~ 17:00 (28시간)</dd>
+                                        <dt>난이도</dt>
+                                        <dd>초급</dd>
+                                        <dt>교육비 지원</dt>
+                                        <dd>고용보험 비환급</dd>
+                                        <dt>평가항목</dt>
+                                        <dd>출석률 100%</dd>
+                                        <dt>수료기준</dt>
+                                        <dd>총점 80점 이상시 수료</dd>
+                                        <dt>정원</dt>
+                                        <dd>20명</dd>
+                                        <dt>교재정보</dt>
+                                        <dd>입문자를 위한 GIT과 HTML&amp;CSS<br>HTML&amp;CSS (35,000원)</dd>
+                                    </dl>
+                                    <button type="button" class="button is-close-panel" title="닫기" aria-label="입문자를 위한 GIT과 html&amp;css 닫기">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        <section class="info-board">
+            <h2 class="offscreen">카페정보 게시판</h2>
+            <div class="feedback">
+                <ul class="feedback__items">
+                    <li class="feedback__item">
+                        <h3 class="offscreen">손님의 후기</h3>
+                        <p class="feedback__title">무엇이 중요한지 알게된시간</p>
+                        <p class="feedback__desc">제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
+                        <p class="feedback__review"><img src="#" alt="별점 5점만점중 5점">5점</p>
+                        <span class="customer-name">우정민</span>
+                    </li>
+                    <li class="feedback__item">
+                        <h3 class="offscreen">손님의 후기</h3>
+                        <p class="feedback__title">정말 행복했습니다.</p>
+                        <p class="feedback__desc">제가 카페에서 커피를 먹엇는데 너무 많이 맛있었어요. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
+                        <p class="feedback__review"><img src="#" alt="별점 5점만점중 4점">4점</p>
+                        <span class="customer-name">강은진</span>
+                    </li>
+                </ul>
+                <button class="feedback__controls" id="pause">Pause</button>
+            </div>
+            <div class="rank">
+                <h3 class="rank__title">카페 w 인기 강좌</h3>
+                <ol class="rank__items">
+                    <li class="rank__item"><a href="#" class="rank__link">UI 구조 &amp; 디자인</a><em class="up hide-text-ir">상승</em></li>
+                    <li class="rank__item"><a href="#" class="rank__link">모바일 웹 UI 제작 실습</a><em class="new hide-text-ir">새로운</em></li>
+                    <li class="rank__item"><a href="#" class="rank__link">UI 인터랙션 주니어</a><em class="down hide-text-ir">하락</em></li>
+                    <li class="rank__item"><a href="#" class="rank__link">React 프로그래밍</a><em class="stop hide-text-ir">멈춤</em></li>
+                </ol>
+                <button class="button rank__btn reset-button" type="button" title="랭크 더 보기">
+                    <span class="hide-text-ir">카페 인기 강좌 랭크 더 보기</span>
+                </button>
+            </div>
+            <a href="files/" download="카페메뉴 브로슈어" class="brochure">
+                <h3 class="brochure__title">브로슈어 다운받기</h3>
+                <img src="#" alt="카페메뉴 브로슈어 이미지" class="brochure__img">
+            </a>
+        </section>
+        <section class="promotion">
+            <h2 class="offscreen" id="promotion">프로모션</h2>
+            <div class="promotion__container container">
+                <iframe src="https://www.youtube.com/embed/cEN00wMFB2A" class="promotion__video"></iframe>
+            </div>
+        </section>
+        <section class="banner">
+            <h2 class="offscreen" id="banner">배너</h2>
+            <div class="banner__container">
+                <p class="banner__title">cafe w . reserve <span>a delicate fragance</span></p>
+                <p class="banner__desc">입 안 가득 퍼지는 산뜻하고 따듯한 봄의 향기</p>s
+                <a href="#" class="button banner__btn" aria-labelledby="banner">자세히 보기</a>
+            </div>
+        </section>
         <section class="gift-card">
             <h2 class="offscreen">Cafe W 기프트 카드</h2>
             <div class="gift-card__container container">
