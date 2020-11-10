@@ -11,4 +11,5 @@
 
 /* Component style */
 @import url(./common.css);
-@import url(./variable.css)
+@import url(./variable.css);
+@import url(./banner.css);

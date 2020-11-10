@@ -56,10 +56,12 @@ legend {
 }
 
 /* button reset */
-.reset-button {
+.button {
   background: transparent;
-  border: 0;
-  padding: 0;
+  border: 2px solid #FFFCF9;
+  padding: 6px 25px;
+  border-radius: 3px;
+  display: inline-block;
 }
 /* hide text for ir technique */
 .hide-text-ir {
@@ -94,4 +96,11 @@ legend {
   transform: none;
 } 
 
+/* text */
+.text-uppercase {
+  text-transform: uppercase;
+}
 
+.text-separate {
+  display: block;
+}
