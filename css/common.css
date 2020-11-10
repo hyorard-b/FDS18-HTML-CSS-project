@@ -1,12 +1,12 @@
-/* rem 이용을 위한 */
+/* Web font-style */
 * { 
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; 
 }
-/* 스킵 네비게이션 */
+/* skip navation */
 .skip-nav {
     display: none;
 }
-/* 헤더 영역 */
+/* header */
 .header {
     background: #282725;
     color: #fffcf9;
@@ -114,7 +114,7 @@
     font-weight: 400;
     font-size: 1.5rem;
 }
-/* 푸터 영역 */
+/* footer */
 .footer {
     background: #282725;
     color: rgba(255, 252, 249, 0.6);
@@ -149,16 +149,13 @@
     padding: 30px 128px;
     width: 100%;
     order: -1;
-    /* background: pink; */
 }
 .footer__info-item-link {
     font-size: 1.6rem;
     font-weight: 700;
-    /* background: yellow; */
 }
 .footer__info-item:hover .footer__info-item-link {
     color:rgba(255, 252, 249, 1);    
-    /* background: yellow; */
 }
 
 .footer__address-container {

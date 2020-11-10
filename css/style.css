@@ -1,14 +1,14 @@
-/* 폰트 spoqa import */
+/* Font spoqa import */
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 
-/* 유저 에이전트 스타일 초기화*/
+/* User agent style */
 @import url(./normalize.css);
 @import url(./reset.css);
 
-/* 기본 스타일 정의 */
+/* Default style */
 @import url(./default.css);
 @import url(./component.css);
 
-/* 컴포넌트 스타일 정의 */
+/* Component style */
 @import url(./common.css);
 @import url(./variable.css)
