@@ -56,7 +56,7 @@ legend {
 }
 
 /* button reset */
-.reset-button {
+.button {
   background: transparent;
   border: 0;
   padding: 0;
@@ -94,4 +94,6 @@ legend {
   transform: none;
 } 
 
-
+.text-bold {
+  font-weight: 700;
+}
