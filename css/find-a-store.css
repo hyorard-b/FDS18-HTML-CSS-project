@@ -1,7 +1,8 @@
 .find-a-store {
   /* gradient 컬러값 다시줘야함, svg 스프라이트 코드 bg이미지로 쓰는 방법 찾기*/
-  background: #282725 radial-gradient(circle, #282725 95%, #282725 100%, #171615 100% ) ; 
+  background: url(../img/home/coffee-store.svg)no-repeat 72% 100%/ 152px 127px, radial-gradient(circle, #282725, #282725, #171615)  #282725; 
   height: 420px;
+  border-bottom: 1px solid rgba(255, 252, 249, 0.15);
 }
 .find-a-store__container {
   position: relative;
