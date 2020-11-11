@@ -28,8 +28,9 @@
 .line-divider::after {
     content: "";
     display: inline-block;
-    width: 160px;
-    border: 1px solid #A37356;
+    width: 166px;
+    height: 2px; 
+    background: #A37356;
     margin-bottom: 5px;
 }
 .line-divider::before {
@@ -89,11 +90,11 @@
 }
 .seasonal-menu__item:first-child {
     top: 140px;
-    left: -20px;
+    left: 100px;
 }
 .seasonal-menu__item:nth-child(2) {
     top: 60px;
-    left: 270px;
+    left: 450px;
 }
 .seasonal-menu__item:last-child {
     top: 200px;

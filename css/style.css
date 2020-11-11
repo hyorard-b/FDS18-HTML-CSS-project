@@ -11,13 +11,14 @@
 
 /* Component style */
 @import url(./common.css);
-@import url(./variable.css);
 @import url(./banner.css);
 @import url(./promotion.css);
 @import url(./seasonal-menu.css);
+@import url(./info-board.css);
 @import url(./notification.css);
 @import url(./gift-card.css);
 @import url(./brand-value.css);
 @import url(./sign-in.css);
 @import url(./sign-component.css);
+@import url(./recommend-lecture.css);
 

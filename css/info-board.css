@@ -1,0 +1,190 @@
+.info-board {
+    background: rgba(125,111,93,1);
+}
+.info-board__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px 30px 120px;
+    position: relative;
+}
+
+
+/* feedback */
+.feedback {
+    width: 743px;
+    height: 400px;
+    background: rgba(40,39,37,1);
+    padding: 90px;
+    position: relative;
+}
+.feedback__items {
+    color: rgba(255,252,249,1);
+    font-weight: 700;
+}
+.feedback__item {
+    display: none;
+}
+.feedback__item:before {
+    content:"";
+    width: 40px;
+    position: absolute;
+    display: block;
+    top: 60px;
+    border-top: 1px solid rgba(125,111,93,1);
+}
+.feedback__item.is--active {
+    display: block;
+}
+.feedback__title {
+    font-size: 2.4rem;
+    line-height: 43.2px;
+    margin-bottom: 10px;
+}
+.feedback__desc {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 25.2px;
+    margin-bottom: 20px;
+    width: 485px;
+}
+.feedback__review {
+    font-size: 2.2rem;
+    line-height: 30.8px;
+    width: 300px;
+}
+.feedback__review .info-board__icon.info-board__star-icon {
+    position: initial;
+    width: 30px;
+    height: 30px;
+}
+.feedback__review .info-board__icon.info-board__star-icon:last-child {
+    margin-right: 10px;
+}
+.feedback__customer-name {
+    font-size: 1.3rem;
+    line-height: 23.4px;
+}
+.feedback__controls {
+    position: absolute;
+    bottom: 32px;
+    left: 40px;
+    width: 15px;
+    height: 21px;
+    border: 0;
+    padding: 0;
+}
+.info-board__bg-visual {
+    display: block;
+    position: absolute;
+    font-size: 600px;
+    line-height: 840px;
+    top: -230px;
+    right: 0;
+    color: rgba(182,140,112,0.08);
+}
+/* lecture rank */
+.lecture-rank {
+    width: 459px;
+    height: 220px;
+    margin-left: 20px;
+    background-color: #FFFCF9;
+    padding: 30px 35px 25px;
+    counter-reset: my-awesome-counter;
+    position: relative;
+}
+.lecture-rank__title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 90%;
+    color: #7D6F5D;
+    margin-bottom: 25px;
+}
+.lecture-rank__items {
+    margin-left: 10px;
+}
+.lecture-rank__item {
+    font-size: 1.6rem;
+    color: rgba(125,111,93,1);
+    display: flex;
+    justify-content: space-between;
+    counter-increment: my-awesome-counter;
+    margin-bottom: 5px;
+}
+.lecture-rank__item:last-child {
+    margin-bottom: 0;
+}
+.lecture-rank__item::before {
+    content: counter(my-awesome-counter);
+    color: rgba(125,111,93,1);
+    margin-right: 10px;
+}
+.lecture-rank__link {
+    flex-grow: 1;
+}
+.lecture-rank__item::marker {
+    content:"";
+}
+.up,
+.new,
+.stop,
+.down {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    margin-right: 10px;
+}
+.info-board__icon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.lecture-rank__btn {
+    border: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+
+
+/* brochure */
+.brochure {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    position: absolute;
+    top: 270px;
+    right: 100px;
+    width: 459px;
+    height: 160px;
+    background-color: rgba(226,119,98,1);
+}
+.brochure__title {
+    width: 122px;
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: rgba(255,252,249,1);
+    margin: 0;
+    margin: 25px 0 0 25px;
+    line-height: 35px;
+}
+.brochure__img {
+    display: inline-block;
+    width: 310px;
+    height: 203px;
+    position: relative;
+    top: -40px;
+    right: -40px;
+}
+.info-board__arrow {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+}
