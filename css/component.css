@@ -45,14 +45,14 @@ legend {
 
 /* layout */
 .container {
-  width: 1200px;
+  width: 1440px;
   margin: 0 auto;
 }
 /* repsonive web design */
 .img-rwd {
   max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /* button reset */
@@ -94,4 +94,17 @@ legend {
   transform: none;
 } 
 
+/* clearfix */
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
 
+/* text */
+.text-bold{
+  font-weight: 700;
+}
+.text-light{
+  font-weight: 300;
+}
