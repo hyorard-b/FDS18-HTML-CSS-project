@@ -1,0 +1,68 @@
+/* 회원가입 및 로그인 페이지 공통 스타일 */
+.sign-section{
+    width: 742px;
+    margin: 100 auto;
+    padding-top: 25px;
+    /* background: ;  바리스타 아저씨*/
+}
+.sign-section__headline,
+.sign-section__desc{
+    text-align: center;
+}
+.sign-section__headline{
+    font-size: 3.2rem;
+}
+.sign-section__desc{
+    font-size: 1.6rem;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #CBC5BE;
+}
+
+/* 로그인 및 회원가입 공통 폼 영역 */
+
+.sign-section-form{
+    width: 438px;
+    margin: 0 auto;
+}
+.sign-section-form__container{
+    width: 100%;
+    position: relative;
+}
+.sign-section-form__label{
+    font-size: 1.4rem;
+}
+.sign-section-form__hint,
+.sign-section-form__error-message{
+    font-size: 1.3rem;
+    padding-left: 9px;
+}
+.sign-section-form__hint{
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.sign-section-form__input{
+    width: 100%;
+    height: 34px;
+    margin-top: 10px;
+    padding: 9px;
+    border: 1px solid #7D6F5D;
+    border-radius: 5px;
+}
+.sign-section-form__button{
+    width: 100%;
+    background: #7D6F5D;
+    border: none;
+    padding: 15px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #FFFCF9;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* 로그인 및 회원가입 주의사항 */
+.sign-section-form__text{
+    font-size: 1.2rem;
+}
