@@ -18,3 +18,8 @@
 
 /* find-a-store section */
 @import url(./find-a-store.css);
+
+/* sign-up and sign-in component.css */
+@import url(./sign-component.css);
+/* sign-up */
+@import url(./sign-up.css);

@@ -6,29 +6,32 @@
 }
 .curriculum__container {
   position: relative;
-  /* transform-style: preserve-3d; */
   height: 100%;
 }
-.curriculum__flip-circle-card,
-.curriculum__article {
+/* circle */
+.curriculum__circle {
   background: #fff;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.curriculum__flip-circle-card {
-  display: none;
   width: 180px;
   height: 180px;
-}
-.curriculum__article {
-  width: 300px;
-  height: 300px;
   text-align: center;
-  color: #7D6F5D;
-  padding: 66px 23px 0;
+  color: #7D6F5D;;
+}
+/* start symbol */
+.star-stroke {
+  fill: #A37356;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+/* article */
+.curriculum__article {
+  display: none;
 }
 .curriculum__article-title {
   font-size: 2.6rem;
@@ -37,4 +40,16 @@
   font-size: 1.6rem;
   margin-top: 20px;
   margin-bottom: 25px;
+}
+/* circle hover */
+.curriculum__circle:hover {
+  width: 300px;
+  height: 300px;
+  padding: 66px 23px 0;
+}
+.curriculum__circle:hover .star-stroke {
+  display: none;  
+}
+.curriculum__circle:hover .curriculum__article {
+  display: block;  
 }
