@@ -106,3 +106,7 @@ legend {
   font-weight: 700;
 }
 
+/* 줄 바꿈 컨테이너 */
+.LFCR{
+  display: block;
+}
