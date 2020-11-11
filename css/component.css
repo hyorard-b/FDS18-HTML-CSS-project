@@ -104,3 +104,6 @@ legend {
 .text-separate {
   display: block;
 }
+.text-lowercase {
+  text-transform: lowercase;
+}

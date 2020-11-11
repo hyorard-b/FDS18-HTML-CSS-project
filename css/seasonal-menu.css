@@ -1,0 +1,118 @@
+.seasonal-menu {
+    background: #F3D6B0;
+}
+.seasonal-menu__container {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 83px 0 200px;
+    position: relative;
+}
+.seasonal-menu__headline {
+    width: 400px;
+    text-align: center;
+    border-bottom: 2px solid #A37356;
+    height: auto;
+    padding-bottom: 20px;
+}
+.seasonal-menu__title {
+    color: #A37356;
+    font-size: 4rem;
+    letter-spacing: 0.1em;
+}
+
+.line-divider {
+    text-align: center;
+    letter-spacing: initial;
+}
+.line-divider::before,
+.line-divider::after {
+    content: "";
+    display: inline-block;
+    width: 160px;
+    border: 1px solid #A37356;
+    margin-bottom: 5px;
+}
+.line-divider::before {
+    margin-right: 15px;
+}
+.line-divider::after {
+    margin-left: 15px;
+}
+.main-text {
+    color: #E27762;
+    font-size: 9rem;
+    line-height: 9rem;
+    font-weight: 700;
+}
+
+.seasonal-menu__desc {
+    color: #A37356;
+    font-size: 2.6rem;
+}
+.seasonal-menu__items {
+    display: flex;
+    padding: 0 20px;
+    position: relative;
+    flex-grow: 1;
+}
+.seasonal-menu__item {
+    width: 283px;
+    height: 428px;
+    position: absolute;
+}
+.seasonal-menu__img {
+    max-width: 100%;
+    height: auto;
+}
+
+.seasonal-menu__img-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.seasonal-menu__img-desc {
+    font-size: 2.1rem;
+    color: rgba(95,76,76,0.9);
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: 450px;
+    letter-spacing: 0.1em;
+}
+.seasonal-menu__img-desc [lang='en'] {
+    font-size: 2.8rem;
+    color: #412311;
+    font-weight: 700;
+    display: block;
+}
+.seasonal-menu__item:first-child .seasonal-menu__img-desc {
+    order: initial;
+}
+.seasonal-menu__item:first-child {
+    top: 140px;
+    left: -20px;
+}
+.seasonal-menu__item:nth-child(2) {
+    top: 60px;
+    left: 270px;
+}
+.seasonal-menu__item:last-child {
+    top: 200px;
+    right: 0;
+}
+.seasonal-menu__item:first-child .seasonal-menu__img-desc {
+    top: 270px;
+}
+.seasonal-menu__item:nth-child(2) .seasonal-menu__img-desc {
+    top: -90px;
+    left: -70px;
+}
+.seasonal-menu__item:last-child .seasonal-menu__img-desc {
+    top: -140px;
+}
+.seasonal-menu__button {
+    border-color: #E27762;
+    color: #E27762;
+    position: absolute; 
+    bottom: 123px;
+    left: 130px;
+}
