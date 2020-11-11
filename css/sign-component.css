@@ -1,7 +1,8 @@
 /* 회원가입 및 로그인 페이지 공통 스타일 */
 .sign-section{
     width: 742px;
-    margin: 100 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 25px;
     /* background: ;  바리스타 아저씨*/
 }
@@ -27,9 +28,12 @@
 .sign-section-form__container{
     width: 100%;
     position: relative;
+    margin-top: 23px;
 }
 .sign-section-form__label{
     font-size: 1.4rem;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 .sign-section-form__hint,
 .sign-section-form__error-message{
@@ -39,10 +43,9 @@
 .sign-section-form__input{
     width: 100%;
     height: 34px;
-    margin-top: 10px;
     padding: 9px;
     border: 1px solid #7D6F5D;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: transparent;
     position: relative;
     z-index: 10;
@@ -56,7 +59,7 @@
     text-align: center;
     color: #FFFCF9;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-top: 20px;
 }
 
@@ -74,10 +77,15 @@
 /* 에러 메시지  */
 .sign-section-form__error-message{
     display: none;
+    color: #e27762;
 }
 .sign-section-is--invalid .sign-section-form__error-message{
     display: inline-block;
     margin-top: 9px;
+
+}
+.sign-section-is--invalid .sign-section-form__input{
+    border-color: #e27762;
 }
 .sign-section-is--valid .sign-section-form__error-message{
     display: none;

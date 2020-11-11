@@ -76,12 +76,6 @@
 .search-form__container.is--active .search-form {
     display: block;
 }
-.search-form__btn-open .ir,
-.search-form__btn-submit .ir{
-    background: url('../img/search-button.png') no-repeat 50% 50%;
-    width: 40px;
-    height: 40px;
-}
 
 [name="searchInput"] {
     background: transparent;

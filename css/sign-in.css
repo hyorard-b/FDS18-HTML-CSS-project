@@ -2,6 +2,7 @@
     background: radial-gradient(closest-side, rgba(255, 255, 255, 0) 0%, rgba(32, 30, 23, 0.6) 100%),
                 url(./../img/sign-in/sign-in__bg.jpg) no-repeat 50% 50%;
     background-size: cover;
+    position: relative;
 }
 .sign-in-container{
     padding: 100px 350px;
@@ -16,18 +17,20 @@
     display: inline-block;
 }
 .main-content::before {
-    bottom: 0;
-    left: 192px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 140px;
 }
 .main-content::after {
-    bottom: 0;
-    right: 192px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 140px;
 }
 
 
 /* 로그인 페이지 */
 .sign-in{
-    background-color: #FFFCF9;
+    background: #FFFCF9 url(../img/sign-in/sign-in-form__bg.png) no-repeat 105% 135%/ 20%;
     color: #7D6F5D;
     border-radius: 10px;
 }
@@ -42,10 +45,6 @@
     display: flex;
     flex-flow: column nowrap;
 }
-.sign-section-form__container{
-    margin-top: 20px;
-}
-
 /* 로그인 주의사항 */
 .sign-in__notice-items{
     width: 438px;
@@ -66,6 +65,8 @@
 .sign-in-form__save-login{
     width: 220px;
 }
+
+/* 토글 버튼 */
 .sign-in-form__radio-save-email,
 .sign-in-form__radio-save-login{
     position: relative;
@@ -76,8 +77,8 @@
     background-color: #CFCCC7;
     border: 1px solid #CFCCC7;
     border-radius: 50px;
-    box-shadow: inset -20px 0 0 0 #ffffff;
-    transition-duration: 200ms;
+    box-shadow: inset -20px 0 0 0 #CFCCC7;
+    transition-duration: 100ms;
     opacity: 0.6;
     margin-right: 5px;
 }
@@ -101,7 +102,7 @@
 }
 .sign-in-form__radio-save-email:checked:after,
 .sign-in-form__radio-save-login:checked:after {
-    left: 20px;
+    left: 15px;
     box-shadow: 0 3px 3px rgba(0,0,0,0.5);
     background-color: #7D6F5D;
 }
