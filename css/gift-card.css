@@ -1,11 +1,12 @@
 /* 기프트 카드 섹션 */
 .gift-card{
-    background: linear-gradient(105.54deg, rgba(32, 23, 1, 0.5) 36%, rgba(95, 57, 35, 0.2) 74%), url(../img/home/gift-card__bg.jpg) no-repeat;
-    height: 852px;
+    background: linear-gradient(105.54deg, rgba(32, 23, 1, 0.5) 36%, rgba(95, 57, 35, 0.2) 74%), url(../img/home/gift-card__bg.jpg) no-repeat 100%;
 }
 .gift-card__container{
     color: #FFFCF9;
     padding: 110px 0;
+    padding-left: 111px;
+    padding-right: 176px;
 }
 
 /* 기프트 카드 텍스트 */

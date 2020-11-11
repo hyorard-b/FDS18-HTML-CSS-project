@@ -45,7 +45,7 @@ legend {
 
 /* layout */
 .container {
-  width: 1200px;
+  width: 1440px;
   margin: 0 auto;
 }
 /* repsonive web design */
@@ -104,6 +104,9 @@ legend {
 /* text */
 .text-bold{
   font-weight: 700;
+}
+.text-light{
+  font-weight: 300;
 }
 
 /* 줄 바꿈 컨테이너 */
