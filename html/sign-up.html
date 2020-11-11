@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/sign-up.css">
     <script src="../js/goToTop.js" async></script>
+    <script src="../js/sign-section.js" async></script>
     <title>Cafe W</title>
 </head>
 <body>
@@ -89,80 +89,98 @@
             </nav>
         </div>
     </header>
-    <main id="main-content">
-        <section class="sign-up">
-            <h2 class="offscreen">회원 가입</h2>
-            <p class="sign-up__headline text-text-bold" lang="en">SIGN UP</p>
-            <p class="sign-up__desc">Cafe W에 가입하세요. 좋은 서비스로 보답하겠습니다.</p>
-            <div class="sign-up__illustration">
+    <main class="main-content" id="main-content">
+        <div class="sign-up-container container">
+            <section class="sign-up sign-section">
+                <h2 class="offscreen">회원 가입</h2>
+                <p class="sign-up__headline sign-section__headline text-bold" lang="en">SIGN UP</p>
+                <p class="sign-up__desc sign-section__desc">Cafe W에 가입하세요. 좋은 서비스로 보답하겠습니다.</p>
+                <div class="sign-up__illustration">
                 <!--음료와 빵을 들고 있는 바리스타 여인-->
-            </div>
-            <!-- sign up form -->
-            <form action="#" class="sign-up-form" method="POST">
+                    <svg class="img-rwd"><use xlink:href="../img/sign-up/sign-up-spriteSheet.svg#sign-up__barista-girl"/></svg>
+                </div>
+                <!-- sign up form -->
+                <form action="#" class="sign-up-form sign-section-form" method="POST">
                 <fieldset>
                     <legend>회원 가입 필수 항목</legend>
                     <!-- email -->
-                    <div class="sign-up-form__email-container">
-                        <label for="email" class="sign-up-form__label text-bold">아이디</label>
-                        <strong class="asterisk">
-                            <!--asterisk mark svg-->
-                        </strong>
-                        <span class="commin-sign-form-hint" id="emailHint">등록할 사용자 계정을 입력합니다. (예: seulbinim@gmail.com)</span>
-                        <input type="email" class="sign-up-form__input" name="email" id="email" autocomplete="on" aria-required="true" aria-describedby="emailHint" aria-invalid="false">
-                        <span class="common-sign-form-error-message" role="alert" aria-live="polite">입력 오류 메시지</span>
+                    <div class="sign-up-form__email-container sign-up-form__container sign-section-form__container">
+                        <label for="email" class="sign-up-form__label sign-section-form__label text-bold">아이디
+                            <strong class="asterisk">
+                                <img class="img-rwd" src="../img/sign-up/asterisk.png" alt="필수 기입 항목">
+                            </strong>
+                        </label>
+                        <span class="sign-section-form__hint" id="emailHint">등록할 사용자 계정을 입력합니다. (예:
+                            seulbinim@gmail.com)</span>
+                        <input type="email" class="sign-up-form__input sign-section-form__input" name="email" id="email" autocomplete="on"
+                            aria-required="true" aria-describedby="emailHint" aria-invalid="false">
+                        <span class="sign-section-form__error-message" role="alert" aria-live="polite">입력 오류 메시지</span>
                     </div>
                     <!-- password -->
-                    <div class="sign-up-form__password-container">
-                        <label for="password" class="sign-up-form__label text-bold">패스워드</label>
-                        <strong class="asterisk">
-                            <!--asterisk mark svg-->
-                        </strong>
-                        <span class="commin-sign-form-hint" id="passwordHint">비밀번호를 등록합니다. (특수문자 및 숫자 대,소문자 포함 8자리 이상)</span>
-                        <input type="password" class="sign-up-form__input" name="password" id="password" minlength="8" aria-required="true" aria-describedby="passwordHint" aria-invalid="false">
-                        <span class="common-sign-form-error-message" role="alert" aria-live="polite">입력 오류 메시지</span>
+                    <div class="sign-up-form__password-container sign-up-form__container sign-section-form__container">
+                        <label for="password" class="sign-up-form__label sign-section-form__label text-bold">패스워드
+                            <strong class="asterisk">
+                                <img class="img-rwd" src="../img/sign-up/asterisk.png" alt="필수 기입 항목">
+                            </strong>
+                        </label>
+                        <span class="sign-up-form__hint sign-section-form__hint" id="passwordHint">비밀번호를 등록합니다. (특수문자 및 숫자 대,소문자 포함 8자리
+                            이상)</span>
+                        <input type="password" class="sign-up-form__input sign-section-form__input" name="password" id="password" minlength="8"
+                            aria-required="true" aria-describedby="passwordHint" aria-invalid="false">
+                        <span class="sign-section-form__error-message" role="alert" aria-live="polite">입력 오류 메시지</span>
                     </div>
                     <!-- confirm password -->
-                    <div class="sign-up-form__password-container">
-                        <label for="confirmPassword" class="sign-up-form__label text-bold">패스워드 확인</label>
-                        <strong class="asterisk">
-                            <!--asterisk mark svg-->
-                        </strong>
-                        <span class="commin-sign-form-hint" id="confirmPasswordHint">등록한 사용자 계정 비밀번호와 동일해야 합니다.</span>
-                        <input type="password" class="sign-up-form__input" name="confirmPassword" id="confirmPassword" minlength="8" aria-required="true" aria-describedby="confirmPasswordHint" aria-invalid="false">
-                        <span class="common-sign-form-error-message" role="alert" aria-live="polite">입력 오류 메시지</span>
+                    <div class="sign-up-form__password-container sign-up-form__container sign-section-form__container">
+                        <label for="confirmPassword" class="sign-up-form__label sign-section-form__label text-bold">패스워드 확인
+                            <strong class="asterisk">
+                                <img class="img-rwd" src="../img/sign-up/asterisk.png" alt="필수 기입 항목">
+                            </strong>
+                        </label>
+                        <span class="sign-section-form__hint" id="confirmPasswordHint">등록한 사용자 계정 비밀번호와 동일해야 합니다.</span>
+                        <input type="password" class="sign-up-form__input sign-section-form__input" name="confirmPassword" id="confirmPassword"
+                            minlength="8" aria-required="true" aria-describedby="confirmPasswordHint"
+                            aria-invalid="false">
+                        <span class="sign-section-form__error-message" role="alert" aria-live="polite">입력 오류 메시지</span>
                     </div>
                     <!-- name -->
-                    <div class="sign-up-form__name-container">
-                        <label for="name" class="sign-up-form__label text-bold">이름</label>
-                        <strong class="asterisk">
-                            <!--asterisk mark svg-->
-                        </strong>
-                        <span class="commin-sign-form-hint" id="nameHint">예) 김데레사</span>
-                        <input type="text" class="sign-up-form__input" name="name" id="name" autocomplete="on" aria-required="true" aria-describedby="nameHint" aria-invalid="false">
+                    <div class="sign-up-form__name-container sign-up-form__container sign-section-form__container">
+                        <label for="name" class="sign-up-form__label sign-section-form__label text-bold">이름
+                            <strong class="asterisk">
+                                <img class="img-rwd" src="../img/sign-up/asterisk.png" alt="필수 기입 항목">
+                            </strong>
+                        </label>
+                        <span class="sign-section-form__hint" id="nameHint">예) 김데레사</span>
+                        <input type="text" class="sign-up-form__input sign-section-form__input" name="name" id="name" autocomplete="on"
+                            aria-required="true" aria-describedby="nameHint" aria-invalid="false">
                     </div>
                     <!-- sex -->
-                    <div class="sign-up-form__sex-container">
-                        <span class="sign-up-form__label text-bold">성별</span>
-                        <strong class="asterisk">
-                            <!--asterisk mark svg-->
-                        </strong>
-                        <div role="radiogroup">
+                    <div class="sign-up-form__sex-container sign-up-form__container sign-section-form__container">
+                        <span class="sign-up-form__label sign-section-form__label text-bold">
+                            성별
+                            <strong class="asterisk">
+                                <img class="img-rwd" src="../img/sign-up/asterisk.png" alt="필수 기입 항목">
+                            </strong>
+                        </span>
+                        <div class="sign-up-form__radio-group" role="radiogroup">
+                            <input type="radio" class="sign-up-form__radio" name="sex" id="female" value="female"
+                            aria-required="true" aria-checked="true" checked>
                             <label class="radio-group__female" for="female">여성</label>
                             <!--::before radio button style-->
-                            <input type="radio" class="sign-up-form__radio" name="sex" id="female" value="female" aria-required="true" aria-checked="true">
+                            <input type="radio" class="sign-up-form__radio" name="sex" id="male" value="male"
+                            aria-checked="false">
                             <label class="radio-group__male" for="male">남성</label>
                             <!--::before radio button style-->
-                            <input type="radio" class="sign-up-form__radio" name="sex" id="male" value="male" aria-checked="false">
                         </div>
                     </div>
                     <!-- birth -->
-                    <div class="sign-up-form__birth-container">
-                        <span class="sign-up-form__label text-bold">생년월일</span>
-                        <strong class="asterisk">
-                            <!--asterisk mark svg-->
-                        </strong>
+                    <div class="sign-up-form__birth-container sign-up-form__container sign-section-form__container">
+                        <span class="sign-up-form__label sign-section-form__label text-bold">생년월일
+                            <strong class="asterisk">
+                                <img class="img-rwd" src="../img/sign-up/asterisk.png" alt="필수 기입 항목">
+                            </strong>
+                        </span>
                         <label for="year" class="select-style offscreen">년도 선택 항목</label>
-                        <select name="year" id="year" aria-required="true">
+                        <select class="birth__select-box birth__year-select" name="year" id="year" aria-required="true">
                             <option value="" aria-setsize="121" aria-posinset="1">년도</option>
                             <option value="2020" aria-setsize="121" aria-posinset="2">2020</option>
                             <option value="2019" aria-setsize="121" aria-posinset="3">2019</option>
@@ -170,7 +188,7 @@
                             <option value="2017" aria-setsize="121" aria-posinset="5">2017</option>
                         </select>
                         <label for="month" class="select-style offscreen">월 선택 항목</label>
-                        <select name="month" id="month" aria-required="true">
+                        <select class="birth__select-box birth__month-select" name="month" id="month" aria-required="true">
                             <option value="" aria-setsize="13" aria-posinset="1">월</option>
                             <option value="1" aria-setsize="13" aria-posinset="2">1</option>
                             <option value="2" aria-setsize="13" aria-posinset="3">2</option>
@@ -178,73 +196,91 @@
                             <option value="4" aria-setsize="13" aria-posinset="5">4</option>
                         </select>
                         <label for="date" class="select-style offscreen">일 선택 항목</label>
-                        <select name="date" id="date" aria-required="true">
+                        <select class="birth__select-box birth__date-select" name="date" id="date" aria-required="true">
                             <option value="" aria-setsize="32" aria-posinset="1">일</option>
                             <option value="1" aria-setsize="32" aria-posinset="2">1</option>
                             <option value="2" aria-setsize="32" aria-posinset="3">2</option>
                             <option value="3" aria-setsize="32" aria-posinset="4">3</option>
                             <option value="4" aria-setsize="32" aria-posinset="5">4</option>
                         </select>
-                        <label for="lunarCheck" class="select-style offscreen">양력, 음력 선택 항목</label>
-                        <select name="lunarCheck" id="lunarCheck">
+                        <label for="metonic" class="select-style offscreen">양력, 음력 선택 항목</label>
+                        <select class="birth__select-box birth__metonic-select" name="metonic" id="metonic">
                             <option value="solar">양력</option>
                             <option value="lunar">음력</option>
                         </select>
                     </div>
-                    <p>
+                    <p class="sign-up-form__text sign-section-form__text">
                         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z" fill="#7D6F5D"/>
+                            <path
+                                d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                                fill="#7D6F5D" />
                         </svg>
                         선택항목은 입력하지 않거나 동의하지 않아도 회원 가입이 가능합니다.
                     </p>
                     <!-- telephone -->
-                    <div class="sign-up-form__tel-container">
-                        <label for="tel" class="sign-up-form__label text-bold">전화번호</label>
-                        <strong class="asterisk">
-                            <!--asterisk mark svg-->
-                        </strong>
-                        <span class="commin-sign-form-hint" id="telHint">사용 중인 전화번호를 입력하세요. (하이픈 제외 숫자만 입력)</span>
-                        <input type="tel" class="sign-up-form__input" name="tel" id="tel" pattern="0[0-9]{2,3}[0-9]{3,4}[0-9]{4}" minlength="7" aria-required="true" aria-describedby="telHint" aria-invalid="false">
-                        <span class="common-sign-form-error-message" role="alert" aria-live="polite">입력 오류 메시지</span>
+                    <div class="sign-up-form__tel-container sign-up-form__container sign-section-form__container">
+                        <label for="tel" class="sign-up-form__label sign-section-form__label text-bold">전화번호
+                            <strong class="asterisk">
+                                <img class="img-rwd" src="../img/sign-up/asterisk.png" alt="필수 기입 항목">
+                            </strong>
+                        </label>
+                        <span class="sign-section-form__hint" id="telHint">사용 중인 전화번호를 입력하세요. (하이픈 제외 숫자만 입력)</span>
+                        <input type="tel" class="sign-up-form__input sign-section-form__input" name="tel" id="tel"
+                            pattern="0[0-9]{2,3}[0-9]{3,4}[0-9]{4}" minlength="7" aria-required="true"
+                            aria-describedby="telHint" aria-invalid="false">
+                        <span class="sign-section-form__error-message" role="alert" aria-live="polite">입력 오류 메시지</span>
                     </div>
                     <!-- verification -->
-                    <div class="sign-up-form__verification-container">
-                        <span class="sign-up-form__title text-bold">인증방식</span>
-                        <strong class="asterisk">
-                            <!--asterisk mark svg-->
-                        </strong>
-                        <div class="verification-mobile">
-                            <!-- mobile svg -->
-                            <p class="verification__title" id="verificationMobileLabel">휴대폰 인증</p>
-                            <p class="verification__desc" id="verificationMobileText">본인 명의 휴대폰으로 인증 절차를 수행합니다.</p>
-                            <a href="#" class="button button-fill" aria-labelledby="verificationMobileLabel" aria-describedby="verificationMobileText" >인증</a>
-                        </div>
-                        <div class="verification-ipin">
-                            <!-- mobile svg -->
-                            <p class="verification__title" id="verificationIpinLabel">아이핀(i-PIN) 인증</p>
-                            <p class="verification__desc" id="verificationIpinText">가입한 아이핀 ID를 사용해 인증 절차를 수행합니다.</p>
-                            <a href="#" class="button button-fill" aria-labelledby="verificationIpinLabel" aria-describedby="verificationIpinText" >인증</a>
-                        </div>
+                    <div class="sign-up-form__verification-container sign-up-form__container sign-section-form__container clearfix">
+                        <span class="sign-up-form__title sign-section-form__label text-bold">
+                            인증방식
+                            <strong class="asterisk">
+                                <img class="img-rwd" src="../img/sign-up/asterisk.png" alt="필수 기입 항목">
+                            </strong>
+                        </span>
+                        <ul class="verification">
+                            <li class="verification-mobile">
+                                <div class="verification-img-mobile">
+                                    <svg class="img-rwd">
+                                        <use xlink:href="../img/sign-up/sign-up-spriteSheet.svg#sign-up__verify-phone" />
+                                    </svg>
+                                </div>
+                                <p class="verification__title text-bold" id="verificationMobileLabel">휴대폰 인증</p>
+                                <p class="verification__desc" id="verificationMobileText">본인 명의 휴대폰으로 인증 절차를 수행합니다.</p>
+                                <a href="#" class="verification__button button button-fill"
+                                    aria-labelledby="verificationMobileLabel"
+                                    aria-describedby="verificationMobileText">인증</a>
+                            </li>
+                            <li class="verification-ipin">
+                                <div class="verification-img-ipin">
+                                    <svg class="img-rwd">
+                                        <use xlink:href="../img/sign-up/sign-up-spriteSheet.svg#sign-up__verify-ipin" /></svg>
+                                </div>
+                                <p class="verification__title text-bold" id="verificationIpinLabel">아이핀(i-PIN) 인증
+                                    </p>
+                                <p class="verification__desc" id="verificationIpinText">가입한 아이핀 ID를 사용해 인증 절차를
+                                        수행합니다.</p>
+                                <a href="#" class="verification__button button button-fill"
+                                        aria-labelledby="verificationIpinLabel"
+                                        aria-describedby="verificationIpinText">인증</a>
+                            </li>
+                        </ul>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>회원 가입 선택 항목</legend>
                     <!-- nickname -->
-                    <div class="sign-up-form__nickname-container">
-                        <label for="nickname" class="sign-up-form__label text-bold">닉네임</label>
-                        <span class="commin-sign-form-hint" id="nicknameHint">예) 슬비 (명사로 이루어진 한글 6자리 이내)</span>
-                        <input type="text" class="sign-up-form__input" name="nickname" id="nickname" maxlength="6" aria-describedby="nicknameHint">
+                    <div class="sign-up-form__nickname-container sign-up-form__container sign-section-form__container">
+                        <label for="nickname" class="sign-up-form__label sign-section-form__label sign-section-form__label text-bold">닉네임</label>
+                        <span class="sign-section-form__hint" id="nicknameHint">예) 슬비 (명사로 이루어진 한글 6자리 이내)</span>
+                        <input type="text" class="sign-up-form__input sign-section-form__input" name="nickname" id="nickname" maxlength="6"
+                            aria-describedby="nicknameHint">
                     </div>
                     <!-- terms of use -->
-                    <div class="sign-up-form__terms-container">
-                        <span class="sign-up-form__title text-bold">선택적 개인정보 수집동의 및 이용약관</span>
-                        <div role="radiogroup">
-                            <label class="terms__agree text-hidden-ir" for="agree">동의</label><!--css-->
-                            <input type="radio" class="sign-up-form__radio" name="agreement" id="agree" value="agree" aria-checked="false">
-                            <label class="terms__disagree text-hidden-ir" for="disagree">비동의</label><!--css-->
-                            <input type="radio" class="sign-up-form__radio" name="agreement" id="disagree" value="disdagree" aria-checked="true">
-                        </div>
-                        <pre class="terms">
+                    <div class="sign-up-form__terms-container sign-up-form__container sign-section-form__container">
+                        <span class="sign-up-form__title sign-section-form__label text-bold">선택적 개인정보 수집동의 및 이용약관</span>
+                        <div class="terms-text-container">
+                            <pre class="terms-text">
 본인은 Cafe W(이하 “회사”라 합니다)가 제공하는 콜 마이 네임 서비스 (이하 “서비스”라 합니다)를 이용하기 위해, 다음과 같이 “회사”가 본인의 개인정보를 수집·이용하는 것에 동의합니다.
 ※ 귀하께서는 개인정보 수집·이용에 대한 동의를 거부하실 수 있으나, 동의를 거부하실 경우 서비스 이용을 하실 수 없습니다.
 1. 개인정보 항목·목적·보유기간
@@ -259,17 +295,21 @@
 * 쿠키의 경우 구체적인 운영 내역과 설정 거부 방법 등은 본 홈페이지 개인정보처리방침 “개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항”에서 확인하실 수 있습니다.
                         </pre>
                     </div>
+                    <label for="agree" class="offscreen">동의</label>
+                    <input type="checkbox" class="agree-checkbox" name="agree" id="agree" aria-checked="false">
+                    </div>
                 </fieldset>
-                <p>
-                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z" fill="#7D6F5D"/>
+                <p class=" sign-section-form__text sign-section-form__text">
+                    <svg width="10" height="10">
+                        <use xlink:href="./../img/sign-up/sign-up-spriteSheet.svg#sign-up__star"></use>
                     </svg>
                     선택항목은 입력하지 않거나 동의하지 않아도 회원 가입이 가능합니다.
                 </p>
                 <!-- form submit button -->
-                <button type="submit" class="sign-up__button button-fill" aria-invalid="true">회원가입</button>
-            </form>
-        </section>
+                <button type="submit" class="sign-up__button sign-section-form__button button button-fill" aria-invalid="true">회원가입</button>
+                </form>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__container container">
@@ -301,8 +341,8 @@
     <button type="button" id="goToTopBtn" class="button-goToTop">
         <svg width="60" height="60" viewBox="0 0 50 50" fill="none">
             <title>페이지 상단 이동</title>
-            <circle cx="25" cy="25" r="25" fill="#C8CDE2" />
-            <path d="M25 38C25.6072 38 26.1 37.5147 26.1 36.9167V15.3047L34.1037 23.5803C34.3198 23.804 34.6097 23.9167 34.9001 23.9167C35.1723 23.9167 35.4457 23.8175 35.6585 23.6177C36.0985 23.2049 36.1156 22.5192 35.6965 22.0858L26.556 12.6348C26.1402 12.2259 25.588 12 25 12C24.412 12 23.8598 12.2259 23.4259 12.6538L14.3035 22.0864C13.8844 22.5197 13.9015 23.2055 14.3415 23.6182C14.7815 24.031 15.4783 24.0142 15.8969 23.5808L23.9 15.2706V36.9167C23.9 37.5147 24.3928 38 25 38Z" fill="#0F0F0F" />
+            <circle cx="25" cy="25" r="25" fill="#E27762" />
+            <path d="M25 38C25.6072 38 26.1 37.5147 26.1 36.9167V15.3047L34.1037 23.5803C34.3198 23.804 34.6097 23.9167 34.9001 23.9167C35.1723 23.9167 35.4457 23.8175 35.6585 23.6177C36.0985 23.2049 36.1156 22.5192 35.6965 22.0858L26.556 12.6348C26.1402 12.2259 25.588 12 25 12C24.412 12 23.8598 12.2259 23.4259 12.6538L14.3035 22.0864C13.8844 22.5197 13.9015 23.2055 14.3415 23.6182C14.7815 24.031 15.4783 24.0142 15.8969 23.5808L23.9 15.2706V36.9167C23.9 37.5147 24.3928 38 25 38Z" fill="#fffcf9" />
         </svg>
     </button>
 </body>

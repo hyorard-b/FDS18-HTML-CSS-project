@@ -1,0 +1,269 @@
+.main-content {
+  color: #7D6F5D;
+  background-color: #fff;
+}
+.sign-up {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border: 1px solid #CBC5BE;
+  background: #ffffff url(../img/sign-up/Barista.png) no-repeat 104% 107%/ 20%;
+}
+/* illustration */
+.sign-up__illustration {
+  width: 108px;
+  height: 105px;
+  margin: 40px auto 0;
+}
+
+/* form */
+.sign-up-form {
+  padding-bottom: 50px;
+}
+/* label, title */
+.sign-up-form__title {
+  display: inline-block;
+}
+/* asterisk */
+.asterisk {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  vertical-align: super;
+}
+.asterisk img {
+  display: block
+}
+/* hint message */
+.sign-up-form__hint {
+  letter-spacing: -1px;
+}
+.sign-up-form__input {
+  width: 100%;
+  height: 34px;
+  padding: 9px;
+}
+.sign-up-form__title {
+  margin-bottom: 10px;
+}
+/* verification */
+.verification {
+  width: 438px;
+  height: 230px;
+  background: #fff;
+  border: 1px solid #7D6F5D;
+  border-radius: 3px;
+  padding: 13px 0;
+}
+.verification-mobile,
+.verification-ipin {
+  text-align: center;
+  float: left;
+  width: 218px;
+}
+.verification-mobile {
+  padding: 34px 40px 8px;
+}
+.verification-ipin {
+  padding-top: 8px;
+  border-left: 0.5px solid #7D6F5D;
+}
+.verification-img-mobile {
+  display: block;
+  width: 33px;
+  height: 55px;
+  margin: 0 auto 15px;
+}
+.verification-img-ipin{
+  display: block;
+  width: 98px;
+  height: 81px;
+  margin: 0 auto;
+}
+.verification__title{
+  font-size: 1.4rem;
+  margin-top: 15px;
+}
+.verification__desc{
+  margin: 6px auto 0 auto;
+  font-size: 1.2rem;
+  width: 132px;
+  height: 28px;
+  line-height: 1.2;
+  text-align: center;
+}
+.verification__button {
+  display: inline-block;
+  background-color: #7D6F5D;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 9px;
+  width: 73px;
+  height: 27px;
+  font-size: 1.2rem;
+  padding: .4em 25px;
+}
+
+/* name and sex */
+.sign-up-form__name-container, 
+.sign-up-form__sex-container {
+  display: inline-block;
+  width: 209px;
+}
+.sign-up-form__name-container .asterisk,
+.sign-up-form__sex-container .asterisk {
+  margin-right: 0;
+}
+/* name */
+.sign-up-form__name-container {
+  margin-right: 16px;
+}
+/* sex */
+/* sex radio button */
+.sign-up-form__radio-group {
+  height: 34px;
+}
+.sign-up-form__radio {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.sign-up-form__radio::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+}
+.sign-up-form__radio::before {
+  background: url(../img/sign-up/raio-unchecked.svg);
+}
+.sign-up-form__radio:checked::before {
+  background: url(../img/sign-up/radio-checked.svg);
+}
+.sign-up-form__sex-container .sign-up-form__radio,
+.sign-up-form__sex-container .radio-group__female,
+.sign-up-form__sex-container .radio-group__male {
+  vertical-align: top;
+}
+.sign-up-form__sex-container .sign-up-form__radio {
+  margin-right: 5px;
+}
+.sign-up-form__sex-container .radio-group__female,
+.sign-up-form__sex-container .radio-group__male {
+  font-size: 1.3rem;
+}
+.sign-up-form__sex-container .radio-group__female {
+  margin-right: 10px;
+}
+
+/* birth */
+.sign-up-form__birth-container .sign-up-form__label {
+  width: 100%;
+}
+.birth__select-box {
+  font-size: 1.4rem;
+  color: currentColor;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  padding: 5px 7px;
+  margin-right: 10px;
+}
+.birth__year-select {
+  width: 133px;
+}
+.birth__month-select {
+  width: 66px;
+}
+.birth__date-select {
+  width: 66px;
+}
+.birth__metonic-select {
+  width: 66px;
+}
+
+/* form text */
+.sign-up-form__text {
+  margin-top: 6px;
+}
+
+/* nickname */
+.sign-up-form__nickname-container .sign-up-form__input {
+  display: block;
+  width: 286px;
+}
+/* terms */
+
+.sign-up-form__terms-container {
+  position: relative;
+}
+/* checkbox */
+.sign-up-form__terms-container .agree-checkbox {
+  position: absolute;
+  top: 12px;
+  right: 25px;
+  appearance: none;
+  outline: none;
+}
+.agree-checkbox::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 14px;
+  border-radius: 7px;
+  background: #CFCCC7;
+  position: absolute;
+  top: -7px;
+  left: -10px;
+}
+.agree-checkbox::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #CFCCC7;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.24);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  transition: left .3s;
+}
+.agree-checkbox:checked:after {
+  left: 4px;
+  background: #7D6F5D;
+}
+.agree-checkbox:checked::before {
+  background-color: #7D6F5D;
+}
+.terms-text-container {
+  width: 438px;
+  height: 169px;
+  padding: 17px 0 17px 17px;
+  background-color: #FFFCF9;
+  border: 1px solid #7D6F5D;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+.terms-text {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  white-space: pre-wrap;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.sign-up__button {
+  width: 100%;
+  background: #7D6F5D;
+  border: none;
+  padding: 15px;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #FFFCF9;
+  font-weight: 700;
+  margin-top: 20px;
+}
