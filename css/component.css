@@ -108,8 +108,3 @@ legend {
 .text-light{
   font-weight: 300;
 }
-
-/* 줄 바꿈 컨테이너 */
-.LFCR{
-  display: block;
-}
