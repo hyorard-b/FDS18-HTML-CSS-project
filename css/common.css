@@ -70,10 +70,10 @@
 .search-form {
     display: none;
 }
-.search-form__container.is--active .search-form__btn-open {
+.search-form-container.is--active .search-form__btn-open {
     display: none;
 }
-.search-form__container.is--active .search-form {
+.search-form-container.is--active .search-form {
     display: block;
 }
 .search-form__btn-open .ir,
