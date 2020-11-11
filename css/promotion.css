@@ -12,7 +12,7 @@
 .promotion__container::before,
 .promotion__container::after {
     content: "";
-    background: url(../img/star-symbol.png) no-repeat 0 0/ 100% 100%;
+    background: url(../img/home/star-symbol.png) no-repeat 0 0/ 100% 100%;
     width: 70px;
     height: 95px;
     position: absolute;
