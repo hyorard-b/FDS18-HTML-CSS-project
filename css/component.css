@@ -52,7 +52,7 @@ legend {
 .img-rwd {
   max-width: 100%;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /* button reset */
@@ -96,6 +96,7 @@ legend {
   transform: none;
 } 
 
+
 /* text */
 .text-uppercase {
   text-transform: uppercase;
@@ -106,4 +107,19 @@ legend {
 }
 .text-lowercase {
   text-transform: lowercase;
+}
+/* clearfix */
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* text */
+.text-bold{
+  font-weight: 700;
+}
+.text-light{
+  font-weight: 300;
+
 }

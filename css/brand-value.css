@@ -1,0 +1,71 @@
+/* 브랜드 밸류 섹션 */
+.brand-value{
+    background-color: #FFFCF9;
+}
+.brand-value__container{
+    padding: 80px 120px;
+    text-align: center;
+}
+
+/* 타이틀 & 설명 */
+.brand-value__title{
+    font-size: 46px;
+}
+.brand-value__desc{
+    margin-top: 8px;
+    font-size: 1.8rem;
+}
+.brand-value__desc::after{
+    content: "";
+    display: block;
+    margin: 55px auto 0;
+    width: 70px;
+    height: 1px;
+    background-color: #7D6F5D;
+}
+
+/* 랩 링크 영역 */
+.brand-value__lab-items{
+    margin: 55px auto 0;
+    height: 825px;
+    position: relative;
+}
+.brand-value__lab-item{
+    width: 692px;
+    height: 692px;
+    position: absolute;
+}
+.brand-value__lab-item:last-child{
+    top: 130px;
+    right: 0;
+}
+.brand-value__lab-menu,
+.brand-value__lab-barista{
+    display: block;
+    position: relative;
+}
+.brand-value__lab-menu{
+    background: url(../img/home/brand-value__lab-menu.png) no-repeat;
+}
+.brand-value__lab-barista{
+    background: url(../img/home/brand-value__lab-barista.png) no-repeat;
+}
+.brand-value__lab-text{
+    display: inline-block;
+    font-size: 3.2rem;
+    color: #FFFCF9;
+    padding-bottom: .3em;
+    border-bottom: 10px solid #FFFCF9;
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 호버 효과 */
+.up{
+    z-index: 1;
+}
+.down{
+    z-index: 0;
+}
