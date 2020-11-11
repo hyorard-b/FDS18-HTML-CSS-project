@@ -359,22 +359,22 @@
             </div>
         </section>
         <section class="curriculum">
-            <h2 class="offscreen">강의 커리큘럼???</h2>
+            <h2 class="offscreen">강의 커리큘럼</h2>
             <div class="curriculum__container container">
-                <div class="curriculum__flip-circle-card" aria-labelledby="curriculumTitle" aria-describedby="curriculumText">
-                    <!-- svg logo -->
-                    <svg><use xlink:href="images/sprite-sheet.svg#"/></svg>
+                <div class="curriculum__circle" aria-labelledby="curriculumTitle" aria-describedby="curriculumText">
+                    <svg class="star-stroke"><use xlink:href="img/home/main-spriteSheet.svg#star-symbol"/></svg>
+                    <article class="curriculum__article">
+                        <h3 class="curriculum__article-title text-bold" id="curriculumTitle">
+                            이듬 블렌디드 러닝
+                        </h3>
+                        <p class="curriculum__article-text" id="curriculumText">
+                            이듬 블렌디드 러닝 과정에서 운영하는 각 과정의 자세한 커리큘럼을 확인하려면 
+                            <b class="text-bold">과정 보기</b>를 눌러주세요.
+                        </p>
+                        <a href="#" class="button-stroke button">과정 보기</a>
+                    </article>
                 </div>
-                <article class="curriculum__article">
-                    <h3 class="curriculum__article-title text-bold" id="curriculumTitle">
-                        이듬 블렌디드 러닝
-                    </h3>
-                    <p class="curriculum__article-text" id="curriculumText">
-                        이듬 블렌디드 러닝 과정에서 운영하는 각 과정의 자세한 커리큘럼을 확인하려면 
-                        <b class="text-bold">과정 보기</b>를 눌러주세요.
-                    </p>
-                    <a href="#" class="button-stroke button">과정 보기</a>
-                </article>
+                
             </div>
         </section>
         <section class="find-a-store">
@@ -383,13 +383,13 @@
                 <p class="find-a-store__desc text-bold text-large">카페 W를 가까이에서 경험해보세요.</p>
                 <p class="find-a-store__desc text-large">고객님과 가장 가까이 있는 매장을 찾아보세요!</p>
                 <p class="find-a-store__desc">
-                    차별화된 커피 경험을 누릴 수 있는 <em class="text-bold"> 리저브 매장</em>
-                    다양한 방법으로 편리하게 즐길 수 있는 드라이브 <em class="text-bold">스루 매장</em>
-                    함께해서 더 따뜻할수 있는 지역사회 소통 공간 <em class="text-bold">커뮤니티 매장</em>
+                    <span>차별화된 커피 경험을 누릴 수 있는 <em class="text-bold"> 리저브 매장</em></span>
+                    <span>다양한 방법으로 편리하게 즐길 수 있는 드라이브 <em class="text-bold">스루 매장</em></span>
+                    <span>함께해서 더 따뜻할수 있는 지역사회 소통 공간 <em class="text-bold">커뮤니티 매장</em></span>
                 </p>
                 <a class="find-a-store__link button-stroke" href="#">매장 찾기</a>
-                <div class="find-a-store__circle hide-text-ir">자리를 비운 테이블 위에 놓여있는 음료들과 디저트</div>
-                <div class="find-a-store__circle hide-text-ir">음료를 음향하고 있는 여자</div>
+                <div class="find-a-store__circle-big hide-text-ir">자리를 비운 테이블 위에 놓여있는 음료들과 디저트</div>
+                <div class="find-a-store__circle-small hide-text-ir">음료를 음향하고 있는 여자</div>
             </div>
         </section>
     </main>
@@ -423,8 +423,8 @@
     <button type="button" id="goToTopBtn" class="button-goToTop">
         <svg width="60" height="60" viewBox="0 0 50 50" fill="none">
             <title>페이지 상단 이동</title>
-            <circle cx="25" cy="25" r="25" fill="#C8CDE2" />
-            <path d="M25 38C25.6072 38 26.1 37.5147 26.1 36.9167V15.3047L34.1037 23.5803C34.3198 23.804 34.6097 23.9167 34.9001 23.9167C35.1723 23.9167 35.4457 23.8175 35.6585 23.6177C36.0985 23.2049 36.1156 22.5192 35.6965 22.0858L26.556 12.6348C26.1402 12.2259 25.588 12 25 12C24.412 12 23.8598 12.2259 23.4259 12.6538L14.3035 22.0864C13.8844 22.5197 13.9015 23.2055 14.3415 23.6182C14.7815 24.031 15.4783 24.0142 15.8969 23.5808L23.9 15.2706V36.9167C23.9 37.5147 24.3928 38 25 38Z" fill="#0F0F0F" />
+            <circle cx="25" cy="25" r="25" fill="#E27762" />
+            <path d="M25 38C25.6072 38 26.1 37.5147 26.1 36.9167V15.3047L34.1037 23.5803C34.3198 23.804 34.6097 23.9167 34.9001 23.9167C35.1723 23.9167 35.4457 23.8175 35.6585 23.6177C36.0985 23.2049 36.1156 22.5192 35.6965 22.0858L26.556 12.6348C26.1402 12.2259 25.588 12 25 12C24.412 12 23.8598 12.2259 23.4259 12.6538L14.3035 22.0864C13.8844 22.5197 13.9015 23.2055 14.3415 23.6182C14.7815 24.031 15.4783 24.0142 15.8969 23.5808L23.9 15.2706V36.9167C23.9 37.5147 24.3928 38 25 38Z" fill="#fffcf9" />
         </svg>
     </button>
 </body>

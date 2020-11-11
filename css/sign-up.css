@@ -241,7 +241,7 @@
 .terms-text-container {
   width: 438px;
   height: 169px;
-  padding: 17px;
+  padding: 17px 0 17px 17px;
   background-color: #FFFCF9;
   border: 1px solid #7D6F5D;
   border-radius: 3px;
