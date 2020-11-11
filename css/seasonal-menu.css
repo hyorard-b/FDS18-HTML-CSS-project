@@ -28,8 +28,9 @@
 .line-divider::after {
     content: "";
     display: inline-block;
-    width: 160px;
-    border: 1px solid #A37356;
+    width: 166px;
+    height: 2px; 
+    background: #A37356;
     margin-bottom: 5px;
 }
 .line-divider::before {

@@ -19,7 +19,7 @@
         <audio>
             <source src="./audio/notification-announcement.m4a" type="audio/mp3">해당 브라우저는 audio 태그를 지원하지 않습니다.
         </audio>
-        <p class="notification__title">카페 W 영업시간 조정안내</p>
+        <a herf="#" class="notification__title">카페 W 영업시간 조정안내</a>
         <time class="notification__date" datetime="2020-02-19">2020-02-19</time>
         <button type="button" class="button notification__button is-close-notification" id="closeNotification" title="공지사항 닫기" aria-label="공지사항 닫기">
             <svg class="notification__close-icon"><use xlink:href="./img/home/main-spriteSheet.svg#notice-bar-close-button" /></svg>
@@ -280,45 +280,122 @@
                     </ul>
                 </section>
             </section>
-        </section>
+        </section>-->
         <section class="info-board">
             <h2 class="offscreen">카페정보 게시판</h2>
-            <div class="feedback">
-                <ul class="feedback__items">
-                    <li class="feedback__item">
-                        <h3 class="offscreen">손님의 후기</h3>
-                        <p class="feedback__title">무엇이 중요한지 알게된시간</p>
-                        <p class="feedback__desc">제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
-                        <p class="feedback__review"><img src="#" alt="별점 5점만점중 5점">5점</p>
-                        <span class="customer-name">우정민</span>
-                    </li>
-                    <li class="feedback__item">
-                        <h3 class="offscreen">손님의 후기</h3>
-                        <p class="feedback__title">정말 행복했습니다.</p>
-                        <p class="feedback__desc">제가 카페에서 커피를 먹엇는데 너무 많이 맛있었어요. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
-                        <p class="feedback__review"><img src="#" alt="별점 5점만점중 4점">4점</p>
-                        <span class="customer-name">강은진</span>
-                    </li>
-                </ul>
-                <button class="feedback__controls" id="pause">Pause</button>
+            <div class="info-board__container container">
+                <div class="feedback">
+                    <ul class="feedback__items">
+                        <li class="feedback__item is--active">
+                            <h3 class="offscreen">손님의 후기</h3>
+                            <p class="feedback__title">무엇이 중요한지 알게된시간</p>
+                            <p class="feedback__desc">제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
+                            <p class="feedback__review">
+                                <svg class="info-board__icon info-board__star-icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
+                                </svg>
+                                <svg class="info-board__icon info-board__star-icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
+                                </svg>
+                                <svg class="info-board__icon info-board__star-icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
+                                </svg>
+                                <svg class="info-board__icon info-board__star-icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
+                                </svg>
+                                <svg class="info-board__icon info-board__star-icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
+                                </svg>
+                                5점
+                            </p>
+                            <span class="feedback__customer-name">우정민</span>
+                        </li>
+                        <li class="feedback__item">
+                            <h3 class="offscreen">손님의 후기</h3>
+                            <p class="feedback__title">정말 행복했습니다.</p>
+                            <p class="feedback__desc">제가 카페에서 커피를 먹엇는데 너무 많이 맛있었어요. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
+                            <p class="feedback__review ">
+                                <svg class="info-board__icon info-board__star-icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
+                                </svg>
+                                <svg class="info-board__icon info-board__star-icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
+                                </svg>
+                                <svg class="info-board__icon info-board__star-icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
+                                </svg>
+                                <svg class="info-board__icon info-board__star-icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
+                                </svg>
+                                <svg class="info-board__icon info-board__star-icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-inactive" />
+                                </svg>
+                                4점
+                            </p>
+                            <span class="customer-name">강은진</span>
+                        </li>
+                    </ul>
+                    <button class="button feedback__controls hide-text-ir" id="pause">
+                        <svg class="info-board__icon info-board__play-icon">
+                            <use xlink:href="./img/home/main-spriteSheet.svg#info-board-play-button" />
+                        </svg>
+                    </button>
+                    <span class="info-board__bg-visual">5</span>
+                </div>
+                <div class="lecture-rank">
+                    <h3 class="lecture-rank__title">카페 w 인기 강좌</h3>
+                    <ol class="lecture-rank__items">
+                        <li class="lecture-rank__item">
+                            <a href="#" class="lecture-rank__link">UI 구조 &amp; 디자인</a>
+                            <em class="up hide-text-ir">
+                                <svg class="info-board__icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#info-board-increase" />
+                                </svg>
+                                상승
+                            </em>
+                        </li>
+                        <li class="lecture-rank__item">
+                            <a href="#" class="lecture-rank__link">모바일 웹 UI 제작 실습</a>
+                            <em class="new hide-text-ir">
+                                <svg class="info-board__icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#info-board-new" />
+                                </svg>
+                                새로운
+                            </em>
+                        </li>
+                        <li class="lecture-rank__item">
+                            <a href="#" class="lecture-rank__link">UI 인터랙션 주니어</a>
+                            <em class="down hide-text-ir">
+                                <svg class="info-board__icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#info-board-decrease" />
+                                </svg>
+                                하락
+                            </em>
+                        </li>
+                        <li class="lecture-rank__item">
+                            <a href="#" class="lecture-rank__link">React 프로그래밍</a>
+                            <em class="stop hide-text-ir">
+                                <svg class="info-board__icon">
+                                    <use xlink:href="./img/home/main-spriteSheet.svg#info-board-same" />
+                                </svg>
+                                멈춤
+                            </em>
+                        </li>
+                    </ol>
+                    <button class="button lecture-rank__btn hide-text-ir" type="button" title="랭크 더 보기">
+                        <svg class="info-board__icon info-board__icon-more">
+                            <use xlink:href="./img/home/main-spriteSheet.svg#info-board-more-button" />
+                        </svg>
+                        카페 인기 강좌 랭크 더 보기
+                    </button>
+                </div>
+                <a href="/file/brochure.docx" download="카페메뉴 브로슈어" class="brochure">
+                    <h3 class="brochure__title">브로슈어 다운받기</h3>
+                    <img src="./img/home/info-board__cafe-brochure.png" alt="카페메뉴 브로슈어 이미지" class="brochure__img">
+                    <svg class="info-board__arrow"><use xlink:href="./img/home/main-spriteSheet.svg#info-board-arrow"/></svg>
+                </a>
             </div>
-            <div class="rank">
-                <h3 class="rank__title">카페 w 인기 강좌</h3>
-                <ol class="rank__items">
-                    <li class="rank__item"><a href="#" class="rank__link">UI 구조 &amp; 디자인</a><em class="up hide-text-ir">상승</em></li>
-                    <li class="rank__item"><a href="#" class="rank__link">모바일 웹 UI 제작 실습</a><em class="new hide-text-ir">새로운</em></li>
-                    <li class="rank__item"><a href="#" class="rank__link">UI 인터랙션 주니어</a><em class="down hide-text-ir">하락</em></li>
-                    <li class="rank__item"><a href="#" class="rank__link">React 프로그래밍</a><em class="stop hide-text-ir">멈춤</em></li>
-                </ol>
-                <button class="button rank__btn reset-button" type="button" title="랭크 더 보기">
-                    <span class="hide-text-ir">카페 인기 강좌 랭크 더 보기</span>
-                </button>
-            </div>
-            <a href="files/" download="카페메뉴 브로슈어" class="brochure">
-                <h3 class="brochure__title">브로슈어 다운받기</h3>
-                <img src="#" alt="카페메뉴 브로슈어 이미지" class="brochure__img">
-            </a>
-        </section>-->
+        </section>
         <section class="promotion">
             <h2 class="offscreen" id="promotion">프로모션</h2>
             <figure class="promotion__container container">
