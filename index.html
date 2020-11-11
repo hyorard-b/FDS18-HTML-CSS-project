@@ -8,16 +8,21 @@
     <title>Cafe W</title>
 </head>
 <body>
-    <div class="skip-nav" tabindex="0"><a href="#menuNav">메뉴 바로가기</a></div>
-    <div class="skip-nav" tabindex="1"><a href="#main">콘텐츠 바로가기</a></div>
+    <div class="go-to-nav" role="button"><a href="#menuNav">메뉴 바로가기</a></div>
+    <div class="skip-nav" role="button"><a href="#main-content">콘텐츠 바로가기</a></div>
     <article class="notification">
         <h2 class="offscreen">공지사항</h2>
+        <button type="button" class="button notification__button notification__sound-button" id="audioButton" title="오디오 끄기" aria-label="오디오 끄기">
+            <svg class="notification__sound-icon"><use xlink:href="./img/home/main-spriteSheet.svg#notice-bar-sound" /></svg>
+        </button>
         <audio>
-            <source src="#" type="audio/mp3">해당 브라우저는 audio 태그를 지원하지 않습니다.
+            <source src="./audio/notification-announcement.m4a" type="audio/mp3">해당 브라우저는 audio 태그를 지원하지 않습니다.
         </audio>
-        <p class="notification__title">카페 w영업시간 조정안내</p>
-        <time datetime="2020-02-19">2020-02-19</time>
-        <button type="button" class="button is-close-notification" id="closeNotification" title="공지사항 닫기" aria-label="공지사항 닫기"><span class="close" aria-hidden="true">×</span></button>
+        <p class="notification__title">카페 W 영업시간 조정안내</p>
+        <time class="notification__date" datetime="2020-02-19">2020-02-19</time>
+        <button type="button" class="button notification__button is-close-notification" id="closeNotification" title="공지사항 닫기" aria-label="공지사항 닫기">
+            <svg class="notification__close-icon"><use xlink:href="./img/home/main-spriteSheet.svg#notice-bar-close-button" /></svg>
+        </button>
     </article>
     <header class="header" id="header">
         <div class="header__container container">
