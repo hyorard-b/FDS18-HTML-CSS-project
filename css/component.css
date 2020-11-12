@@ -3,7 +3,8 @@
 
 /* hidden text & content */
 .offscreen,
-legend {
+legend,
+caption {
   overflow: hidden;
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
@@ -71,6 +72,7 @@ legend {
 }
 /* go to top button */
 .button-goToTop {
+  background-color: rgba(226,119,98,1);
   cursor: pointer;
   position: fixed;
   z-index: 50;
@@ -125,4 +127,8 @@ legend {
 }
 .text-light{
   font-weight: 300;
+}
+.small-icon-size {
+  width: 10px;
+  height: 10px;
 }

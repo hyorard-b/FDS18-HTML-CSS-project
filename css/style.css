@@ -1,6 +1,3 @@
-/* Font spoqa import */
-@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
-
 /* User agent style */
 @import url(./normalize.css);
 @import url(./reset.css);

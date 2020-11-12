@@ -88,7 +88,7 @@
 .verification__desc{
   margin: 6px auto 0 auto;
   font-size: 1.2rem;
-  width: 132px;
+  width: 150px;
   height: 28px;
   line-height: 1.2;
   text-align: center;
@@ -103,7 +103,7 @@
   width: 73px;
   height: 27px;
   font-size: 1.2rem;
-  padding: .4em 25px;
+  padding: .4em 10px;
 }
 
 /* name and sex */
