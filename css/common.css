@@ -21,7 +21,6 @@
 .sub-nav-container {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
     align-items: center;
     padding: 21px 0;
     position: relative;

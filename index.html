@@ -16,7 +16,7 @@
     <article class="notification">
         <h2 class="offscreen">공지사항</h2>
         <button type="button" class="button notification__button notification__sound-button" id="audioButton" title="오디오 끄기" aria-label="오디오 끄기">
-            <svg class="notification__sound-icon"><use xlink:href="./img/home/main-spriteSheet.svg#notice-bar-sound" /></svg>
+            <img src="./img/svg/main-svgs/notice-bar__sound.svg" alt="오디오 끄기 버튼" class="notification__sound-icon">
         </button>
         <audio>
             <source src="./audio/notification-announcement.m4a" type="audio/mp3">해당 브라우저는 audio 태그를 지원하지 않습니다.
@@ -24,7 +24,7 @@
         <a href="#" class="notification__title">카페 W 영업시간 조정안내</a>
         <time class="notification__date" datetime="2020-02-19">2020-02-19</time>
         <button type="button" class="button notification__button is-close-notification" id="closeNotification" title="공지사항 닫기" aria-label="공지사항 닫기">
-            <svg class="notification__close-icon"><use xlink:href="./img/home/main-spriteSheet.svg#notice-bar-close-button" /></svg>
+            <img src="./img/svg/main-svgs/notice-bar__close-button.svg" alt="공지사항 닫기 버튼" class="notification__close-icon">
         </button>
     </article>
     <header class="header" id="header">
@@ -32,9 +32,7 @@
             <h1 class="offscreen">Cafe W</h1>
             <div class="sub-nav-container container">
                 <a href="index.html" class="header__home-link" title="Cafe W 홈 페이지 바로가기" aria-label="Cafe W 홈 페이지 바로가기">
-                    <svg class="img-rwd">
-                        <use xlink:href="./img/home/main-spriteSheet.svg#header-logo"></use>
-                    </svg>
+                    <img src="./img/svg/main-svgs/header__logo.svg" alt="Cafe W 로고 이미지" class="img-rwd">
                 </a>
                 <!-- login and sign up -->
                 <nav class="nav" aria-labelledby="memberNav">
@@ -46,20 +44,16 @@
                 </nav>
                 <!-- search form -->
                 <div class="search-form-container">
-                    <button class="search-form__btn-open button" type="button" title="검색창 띄우기">
-                        <svg class="search-form__icon">
-                            <use xlink:href="./img/home/main-spriteSheet.svg#header-search"></use>
-                        </svg>
+                    <button class="search-form__btn-open button" type="button" title="검색창 띄우기" aria-label="검색창 띄우기 버튼">
+                        <img src="./img/svg/main-svgs/header__search.svg" alt="검색창 띄우기 버튼" class="search-form__icon">
                     </button>
                     <form action="#" class="search-form" method="GET">
                         <fieldset>
                             <legend>검색 영역</legend>
                             <label for="searchInput" class="offscreen">검색창</label>
                             <input type="search" name="searchInput" id="searchInput" placeholder="검색어를 입력하세요...">
-                            <button class="search-form__btn-submit button" type="submit" title="검색하기">
-                                <svg class="search-form__icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#header-search"></use>
-                                </svg>
+                            <button class="search-form__btn-submit button" type="submit" title="검색하기" aria-label="검색창 닫기 버튼">
+                                <img src="./img/svg/main-svgs/header__search.svg" alt="검색창 닫기 버튼" class="search-form__icon">
                             </button>
                         </fieldset>
                     </form>
@@ -149,14 +143,10 @@
             <div class="recommend-lecture__container ">
                 <ul class="recommend-lecture__tab-list" role="tablist">
                     <li id="tab1" class="tab-1" role="tab" aria-controls="mutiCampLectures" aria-selected="true" tabindex="0"><b class="text-bold">멀티 캠퍼스</b> 추천 강좌
-                        <svg class="recommend-lecture__icon">
-                            <use xlink:href="./img/home/main-spriteSheet.svg#recommend-lecture-arrow-up" />
-                        </svg>
+                        <img src="./img/svg/main-svgs/recommend-lecture__arrow-up.svg" alt="" class="img-rwd recommend-lecture__icon">
                     </li>
                     <li id="tab2" class="tab-2" role="tab" aria-controls="eUIDLectures" aria-selected="false" tabindex="0"><b class="text-bold">이듬 블랜디드 러닝</b> 추천강좌
-                        <svg class="recommend-lecture__icon">
-                            <use xlink:href="./img/home/main-spriteSheet.svg#recommend-lecture-arrow-down" />
-                        </svg>
+                        <img src="./img/svg/main-svgs/recommend-lecture__arrow-down.svg" alt="" class="img-rwd recommend-lecture__icon">
                     </li>
                 </ul>
                 <section id="mutiCampLectures" role="tabpanel" aria-labelledby="tab1" class="recommend-lecture__tab-contents container is--active">
@@ -173,22 +163,12 @@
                                         <p class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</p>
                                         <p class="recommend-lecture__content-desc">입문자를 위한 GIT과 HTML&amp;CSS</p>
                                         <p class="recommend-lecture__content-review">
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-inactive" />
-                                            </svg>
-                                            4점
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-inactive.svg" alt="" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <span class="offscreen">5점만점중</span>4점
                                         </p>
                                         <table class="recommend-lecture__info-table">
                                             <tbody>
@@ -217,7 +197,7 @@
                                             </tbody>
                                         </table>
                                         <button type="button" class="button content-detail__button is-close-panel" title="닫기" aria-label="웹사이트 개발과 디자인 기초강좌 자료패널 닫기">
-                                            <svg class="content-detail__close-icon"><use xlink:href="./img/home/main-spriteSheet.svg#notice-bar-close-button" /></svg>
+                                            <img src="./img/svg/main-svgs/notice-bar__close-button.svg" alt="자료패널 닫기버튼" class="content-detail__close-icon">
                                         </button>
                                     </div>
                                 </article>
@@ -232,22 +212,12 @@
                                         <p class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</p>
                                         <p class="recommend-lecture__content-desc">입문자를 위한 GIT과 HTML&amp;CSS</p>
                                         <p class="recommend-lecture__content-review">
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-inactive" />
-                                            </svg>
-                                            4점
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <span class="offscreen">5점만점중</span>5점
                                         </p>
                                         <table class="recommend-lecture__info-table">
                                             <tbody>
@@ -276,25 +246,19 @@
                                             </tbody>
                                         </table>
                                         <button type="button" class="button content-detail__button is-close-panel" title="닫기" aria-label="웹사이트 개발과 디자인 기초강좌 자료패널 닫기">
-                                            <svg class="content-detail__close-icon"><use xlink:href="./img/home/main-spriteSheet.svg#notice-bar-close-button" /></svg>
+                                            <img src="./img/svg/main-svgs/notice-bar__close-button.svg" alt="자료패널 닫기버튼" class="content-detail__close-icon">
                                         </button>
                                     </div>
                                 </article>
                             </li>
                             <li class="carousel__snapper" tabindex="0">
-                                <svg class="recommend-lecture__carousel-left-arrow-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#recommend-lecture-arrow-left" />
-                                </svg>
+                                <img src="./img/svg/main-svgs/recommend-lecture__arrow-left.svg" alt="슬라이더쇼 왼쪽버튼" class="recommend-lecture__carousel-left-arrow-icon">
                             </li>
                             <li class="carousel__snapper" tabindex="0">
-                                <svg class="recommend-lecture__carousel-right-arrow-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#recommend-lecture-arrow-right" />
-                                </svg>
+                                <img src="./img/svg/main-svgs/recommend-lecture__arrow-right.svg" alt="슬라이더쇼 오른쪽버튼" class="recommend-lecture__carousel-right-arrow-icon">
                             </li>
                             <li class="carousel__play-container">
-                                <svg class="recommend-lecture__carousel-pause-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#recommend-lecture-indic-pause" />
-                                </svg>
+                                <img src="./img/svg/main-svgs/recommend-lecture__indic-pause.svg" alt="슬라이더쇼 멈춤 버튼" class="recommend-lecture__carousel-pause-icon">
                                 <ol class="carousel__navigation-list">
                                     <li class="carousel__navigation-item">
                                       <a href="#carousel__slide1"
@@ -313,9 +277,7 @@
                                          class="carousel__navigation-button hide-text-ir">Go to slide 4</a>
                                     </li>
                                 </ol>
-                                <svg class="recommend-lecture__carousel-indic-active-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#recommend-lecture-indic-active" />
-                                </svg>
+                                <img src="./img/svg/main-svgs/recommend-lecture__indic-active.svg" alt="" class="recommend-lecture__carousel-indic-active-icon">
                             </li>
                         </ul>
                     </section>
@@ -334,22 +296,12 @@
                                         <p class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</p>
                                         <p class="recommend-lecture__content-desc">입문자를 위한 GIT과 HTML&amp;CSS</p>
                                         <p class="recommend-lecture__content-review">
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-inactive" />
-                                            </svg>
-                                            4점
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <span class="offscreen">5점만점중</span>5점
                                         </p>
                                         <table class="recommend-lecture__info-table">
                                             <tbody>
@@ -378,7 +330,7 @@
                                             </tbody>
                                         </table>
                                         <button type="button" class="button content-detail__button is-close-panel" title="닫기" aria-label="웹사이트 개발과 디자인 기초강좌 자료패널 닫기">
-                                            <svg class="content-detail__close-icon"><use xlink:href="./img/home/main-spriteSheet.svg#notice-bar-close-button" /></svg>
+                                            <img src="./img/svg/main-svgs/notice-bar__close-button.svg" alt="자료패널 닫기버튼" class="content-detail__close-icon">
                                         </button>
                                     </div>
                                 </article>
@@ -393,22 +345,12 @@
                                         <p class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</p>
                                         <p class="recommend-lecture__content-desc">입문자를 위한 GIT과 HTML&amp;CSS</p>
                                         <p class="recommend-lecture__content-review">
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                            </svg>
-                                            <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
-                                                <use xlink:href="./img/home/main-spriteSheet.svg#star-inactive" />
-                                            </svg>
-                                            4점
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="recommend-lecture__content-icon recommend-lecture__star-icon">
+                                            <span class="offscreen">5점만점중</span>5점
                                         </p>
                                         <table class="recommend-lecture__info-table">
                                             <tbody>
@@ -437,10 +379,38 @@
                                             </tbody>
                                         </table>
                                         <button type="button" class="button content-detail__button is-close-panel" title="닫기" aria-label="웹사이트 개발과 디자인 기초강좌 자료패널 닫기">
-                                            <svg class="content-detail__close-icon"><use xlink:href="./img/home/main-spriteSheet.svg#notice-bar-close-button" /></svg>
+                                            <img src="./img/svg/main-svgs/notice-bar__close-button.svg" alt="자료패널 닫기버튼" class="content-detail__close-icon">
                                         </button>
                                     </div>
                                 </article>
+                            </li>
+                            <li class="carousel__snapper" tabindex="0">
+                                <img src="./img/svg/main-svgs/recommend-lecture__arrow-left.svg" alt="슬라이더쇼 왼쪽버튼" class="recommend-lecture__carousel-left-arrow-icon">
+                            </li>
+                            <li class="carousel__snapper" tabindex="0">
+                                <img src="./img/svg/main-svgs/recommend-lecture__arrow-right.svg" alt="슬라이더쇼 오른쪽버튼" class="recommend-lecture__carousel-right-arrow-icon">
+                            </li>
+                            <li class="carousel__play-container">
+                                <img src="./img/svg/main-svgs/recommend-lecture__indic-pause.svg" alt="슬라이더쇼 멈춤 버튼" class="recommend-lecture__carousel-pause-icon">
+                                <ol class="carousel__navigation-list">
+                                    <li class="carousel__navigation-item">
+                                      <a href="#carousel__slide1"
+                                         class="carousel__navigation-button hide-text-ir">Go to slide 1</a>
+                                    </li>
+                                    <li class="carousel__navigation-item">
+                                      <a href="#carousel__slide2"
+                                         class="carousel__navigation-button hide-text-ir">Go to slide 2</a>
+                                    </li>
+                                    <li class="carousel__navigation-item">
+                                      <a href="#carousel__slide3"
+                                         class="carousel__navigation-button hide-text-ir">Go to slide 3</a>
+                                    </li>
+                                    <li class="carousel__navigation-item">
+                                      <a href="#carousel__slide4"
+                                         class="carousel__navigation-button hide-text-ir">Go to slide 4</a>
+                                    </li>
+                                </ol>
+                                <img src="./img/svg/main-svgs/recommend-lecture__indic-active.svg" alt="" class="recommend-lecture__carousel-indic-active-icon">
                             </li>
                         </ul>
                     </section>
@@ -457,22 +427,12 @@
                             <p class="feedback__title">무엇이 중요한지 알게된시간</p>
                             <p class="feedback__desc">제가 들었던 해외 튜토리얼에 비해 시맨틱한 마크업과 접근성 비중이 크게 다뤄져 좋았습니다. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
                             <p class="feedback__review">
-                                <svg class="info-board__icon info-board__star-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                </svg>
-                                <svg class="info-board__icon info-board__star-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                </svg>
-                                <svg class="info-board__icon info-board__star-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                </svg>
-                                <svg class="info-board__icon info-board__star-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                </svg>
-                                <svg class="info-board__icon info-board__star-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                </svg>
-                                5점
+                                <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="info-board__icon info-board__star-icon">
+                                <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="info-board__icon info-board__star-icon">
+                                <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="info-board__icon info-board__star-icon">
+                                <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="info-board__icon info-board__star-icon">
+                                <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="info-board__icon info-board__star-icon">
+                                <span class="offscreen">5점만점중</span>5점
                             </p>
                             <span class="feedback__customer-name">우정민</span>
                         </li>
@@ -481,30 +441,18 @@
                             <p class="feedback__title">정말 행복했습니다.</p>
                             <p class="feedback__desc">제가 카페에서 커피를 먹엇는데 너무 많이 맛있었어요. 많은 튜토리얼들이 디자인을 어떻게 구현하는지에만 초점이 맞춰져 있잖아요. 무엇이 중요한지 알게되어 많은 도음이 되었습니다.</p>
                             <p class="feedback__review ">
-                                <svg class="info-board__icon info-board__star-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                </svg>
-                                <svg class="info-board__icon info-board__star-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                </svg>
-                                <svg class="info-board__icon info-board__star-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                </svg>
-                                <svg class="info-board__icon info-board__star-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-active" />
-                                </svg>
-                                <svg class="info-board__icon info-board__star-icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#star-inactive" />
-                                </svg>
-                                4점
+                                <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="info-board__icon info-board__star-icon">
+                                <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="info-board__icon info-board__star-icon">
+                                <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="info-board__icon info-board__star-icon">
+                                <img src="./img/svg/main-svgs/star-active.svg" alt="별점" class="info-board__icon info-board__star-icon">
+                                <img src="./img/svg/main-svgs/star-inactive.svg" alt="" class="info-board__icon info-board__star-icon">
+                                <span class="offscreen">5점만점중</span>4점
                             </p>
                             <span class="customer-name">강은진</span>
                         </li>
                     </ul>
                     <button class="button feedback__controls hide-text-ir" id="pause" title="리뷰 슬라이드 재생하기" aria-label="리뷰 슬라이드 재생하기">
-                        <svg class="info-board__icon info-board__play-icon">
-                            <use xlink:href="./img/home/main-spriteSheet.svg#info-board-play-button" />
-                        </svg>
+                        <img src="./img/svg/main-svgs/info-board__play-button.svg" alt="리뷰 슬라이드 재생하기 버튼" class="info-board__icon info-board__play-icon">
                     </button>
                     <span class="info-board__bg-visual">5</span>
                 </div>
@@ -513,52 +461,37 @@
                     <ol class="lecture-rank__items">
                         <li class="lecture-rank__item">
                             <a href="#" class="lecture-rank__link">UI 구조 &amp; 디자인</a>
-                            <em class="up hide-text-ir">
-                                <svg class="info-board__icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#info-board-increase" />
-                                </svg>
-                                상승
+                            <em class="up">
+                                <img src="./img/svg/main-svgs/info-board__increase.svg" alt="상승" class="info-board__icon">
                             </em>
                         </li>
                         <li class="lecture-rank__item">
                             <a href="#" class="lecture-rank__link">모바일 웹 UI 제작 실습</a>
-                            <em class="new hide-text-ir">
-                                <svg class="info-board__icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#info-board-new" />
-                                </svg>
-                                새로운
+                            <em class="new">
+                                <img src="./img/svg/main-svgs/info-board__new.svg" alt="새로운" class="info-board__icon">
                             </em>
                         </li>
                         <li class="lecture-rank__item">
                             <a href="#" class="lecture-rank__link">UI 인터랙션 주니어</a>
-                            <em class="down hide-text-ir">
-                                <svg class="info-board__icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#info-board-decrease" />
-                                </svg>
-                                하락
+                            <em class="down">
+                                <img src="./img/svg/main-svgs/info-board__decrease.svg" alt="하락" class="info-board__icon">
                             </em>
                         </li>
                         <li class="lecture-rank__item">
                             <a href="#" class="lecture-rank__link">React 프로그래밍</a>
-                            <em class="stop hide-text-ir">
-                                <svg class="info-board__icon">
-                                    <use xlink:href="./img/home/main-spriteSheet.svg#info-board-same" />
-                                </svg>
-                                멈춤
+                            <em class="stop">
+                                <img src="./img/svg/main-svgs/info-board__same.svg" alt="멈춤" class="info-board__icon">
                             </em>
                         </li>
                     </ol>
-                    <button class="button lecture-rank__btn hide-text-ir" type="button" title="랭크 더 보기">
-                        <svg class="info-board__icon info-board__icon-more">
-                            <use xlink:href="./img/home/main-spriteSheet.svg#info-board-more-button" />
-                        </svg>
-                        카페 인기 강좌 랭크 더 보기
+                    <button class="button lecture-rank__btn hide-text-ir" type="button" title="카페 인기 강좌 랭크 더 보기" aria-label="카페 인기 강좌 랭크 더 보기">
+                        <img src="./img/svg/main-svgs/info-board__more-button.svg" alt="랭크 더보기 버튼" class="info-board__icon info-board__icon-more">
                     </button>
                 </div>
                 <a href="/file/brochure.docx" download="카페메뉴 브로슈어" class="brochure">
                     <h3 class="brochure__title">브로슈어 다운받기</h3>
                     <img src="./img/home/info-board__cafe-brochure.png" alt="카페메뉴 브로슈어 이미지" class="brochure__img">
-                    <svg class="info-board__arrow"><use xlink:href="./img/home/main-spriteSheet.svg#info-board-arrow"/></svg>
+                    <img src="./img/svg/main-svgs/info-board__arrow.svg" alt="카페메뉴 브로슈어 다운로드" class="info-board__arrow">
                 </a>
             </div>
         </section>
@@ -645,9 +578,7 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__logo">
-                <svg class="img-rwd">
-                    <use xlink:href="./../img/home/main-spriteSheet.svg#footer-logo"></use>
-                </svg>
+                <img src="./img/svg/main-svgs/footer__logo.svg" alt="하단쪽 카페로고" class="img-rwd">
             </div>
             <ul class="footer__info-items">
                 <li class="footer__info-item"><a class="footer__info-link" href="#">개인정보처리방침</a></li>
