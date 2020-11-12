@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./css/style.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/goToTop.js" async></script>
     <script src="./js/brand-value.js" async></script>
@@ -31,7 +32,7 @@
         <div class="header__container container">
             <h1 class="offscreen">Cafe W</h1>
             <div class="sub-nav-container container">
-                <a href="index.html" class="header__home-link">
+                <a href="index.html" class="header__home-link" title="Cafe W 홈 페이지 바로가기" aria-label="Cafe W 홈 페이지 바로가기">
                     <svg class="img-rwd">
                         <use xlink:href="./img/home/main-spriteSheet.svg#header-logo"></use>
                     </svg>
@@ -499,7 +500,7 @@
                             <span class="customer-name">강은진</span>
                         </li>
                     </ul>
-                    <button class="button feedback__controls hide-text-ir" id="pause">
+                    <button class="button feedback__controls hide-text-ir" id="pause" title="리뷰 슬라이드 재생하기" aria-label="리뷰 슬라이드 재생하기">
                         <svg class="info-board__icon info-board__play-icon">
                             <use xlink:href="./img/home/main-spriteSheet.svg#info-board-play-button" />
                         </svg>
