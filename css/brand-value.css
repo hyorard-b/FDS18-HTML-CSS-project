@@ -63,9 +63,9 @@
 }
 
 /* 호버 효과 */
-.up{
+.front{
     z-index: 1;
 }
-.down{
+.back{
     z-index: 0;
 }
