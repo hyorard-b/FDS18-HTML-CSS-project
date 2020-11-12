@@ -9,8 +9,8 @@
     <title>Cafe W</title>
 </head>
 <body>
-    <div class="go-to-nav" role="button"><a href="#menuNav">메뉴 바로가기</a></div>
-    <div class="skip-nav" role="button"><a href="#main-content">콘텐츠 바로가기</a></div>
+    <div class="go-to-nav"><a href="#menuNav" role="button">메뉴 바로가기</a></div>
+    <div class="skip-nav"><a href="#main-content" role="button">콘텐츠 바로가기</a></div>
     <article class="notification">
         <h2 class="offscreen">공지사항</h2>
         <button type="button" class="button notification__button notification__sound-button" id="audioButton" title="오디오 끄기" aria-label="오디오 끄기">
@@ -19,7 +19,7 @@
         <audio>
             <source src="./audio/notification-announcement.m4a" type="audio/mp3">해당 브라우저는 audio 태그를 지원하지 않습니다.
         </audio>
-        <a herf="#" class="notification__title">카페 W 영업시간 조정안내</a>
+        <a href="#" class="notification__title">카페 W 영업시간 조정안내</a>
         <time class="notification__date" datetime="2020-02-19">2020-02-19</time>
         <button type="button" class="button notification__button is-close-notification" id="closeNotification" title="공지사항 닫기" aria-label="공지사항 닫기">
             <svg class="notification__close-icon"><use xlink:href="./img/home/main-spriteSheet.svg#notice-bar-close-button" /></svg>
@@ -157,16 +157,17 @@
                 </li>
             </ul>
             <section id="mutiCampLectures" role="tabpanel" aria-labelledby="tab1" class="recommend-lecture__tab-contents is--active">
+                <h3 class="offscreen">멀티 캠퍼스 강의</h3>
                 <section class="recommend-lecture__carousel" aria-label="멀티 캠퍼스 인기강좌 슬라이더 쇼">
                     <ul class="recommend-lecture__viewport">
                         <li class="recommend-lecture__slide1">
                             <article class="recommend-lecture__tab-content">
-                                <div class="recommend-lecture__content-container" id="lectureWebResponsiveDesign">
+                                <div class="recommend-lecture__content-container" id="gitHTMLCSS">
                                     <p class="recommend-lecture__content-title"><b lang='en' class="text-size-change text-uppercase text-bold text-separate"><span class="text-separate">GIT &amp;</span> HTML/CSS</b>입문자를 위한 GIT과 HTML&amp;CSS</p>
                                     <a href="#" role="button" aria-haspopup="true" aria-pressed="false" class="button">강의 정보</a>
                                 </div>
-                                <div class="recommend-lecture__content-detail" role="article" aria-modal="false" aria-labelledby="lectureWebResponsiveDesign">
-                                    <h3 class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</h3>
+                                <div class="recommend-lecture__content-detail" role="article" aria-labelledby="gitHTMLCSS">
+                                    <p class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</p>
                                     <p class="recommend-lecture__content-desc">입문자를 위한 GIT과 HTML&amp;CSS</p>
                                     <p class="recommend-lecture__content-review">
                                         <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
@@ -224,8 +225,8 @@
                                     <p class="recommend-lecture__content-title"><b lang='en' class="text-size-change text-uppercase text-bold text-separate"><span class="text-separate">responsive web</span> design strategies</b>반응형 웹디자인 전략</p>
                                     <a href="#" role="button" aria-haspopup="true" aria-pressed="false" class="button">강의 정보</a>
                                 </div>
-                                <div class="recommend-lecture__content-detail is--active" role="article" aria-modal="false" aria-labelledby="lectureWebResponsiveDesign">
-                                    <h3 class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</h3>
+                                <div class="recommend-lecture__content-detail is--active" role="article" aria-labelledby="lectureWebResponsiveDesign">
+                                    <p class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</p>
                                     <p class="recommend-lecture__content-desc">입문자를 위한 GIT과 HTML&amp;CSS</p>
                                     <p class="recommend-lecture__content-review">
                                         <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
@@ -277,17 +278,17 @@
                                 </div>
                             </article>
                         </li>
-                        <div class="carousel__snapper" tabindex="0">
+                        <li class="carousel__snapper" tabindex="0">
                             <svg class="recommend-lecture__carousel-left-arrow-icon">
                                 <use xlink:href="./img/home/main-spriteSheet.svg#recommend-lecture-arrow-left" />
                             </svg>
-                        </div>
-                        <div class="carousel__snapper" tabindex="0">
+                        </li>
+                        <li class="carousel__snapper" tabindex="0">
                             <svg class="recommend-lecture__carousel-right-arrow-icon">
                                 <use xlink:href="./img/home/main-spriteSheet.svg#recommend-lecture-arrow-right" />
                             </svg>
-                        </div>
-                        <div class="carousel__play-container">
+                        </li>
+                        <li class="carousel__play-container">
                             <svg class="recommend-lecture__carousel-pause-icon">
                                 <use xlink:href="./img/home/main-spriteSheet.svg#recommend-lecture-indic-pause" />
                             </svg>
@@ -312,21 +313,22 @@
                             <svg class="recommend-lecture__carousel-indic-active-icon">
                                 <use xlink:href="./img/home/main-spriteSheet.svg#recommend-lecture-indic-active" />
                             </svg>
-                        </div>
+                        </li>
                     </ul>
                 </section>
             </section>
             <section id="eUIDLectures" role="tabpanel" aria-labelledby="tab2" class="recommend-lecture__tab-contents">
-                <section class="recommend-lecture__carousel" aria-label="멀티 캠퍼스 인기강좌 슬라이더 쇼">
+                <h3 class="offscreen">이듬 강의</h3>
+                <section class="recommend-lecture__carousel" aria-label="이듬 인기강좌 슬라이더 쇼">
                     <ul class="recommend-lecture__viewport">
                         <li class="recommend-lecture__slide1">
                             <article class="recommend-lecture__tab-content">
-                                <div class="recommend-lecture__content-container" id="lectureWebResponsiveDesign1">
+                                <div class="recommend-lecture__content-container" id="gitHTMLCSS2">
                                     <p class="recommend-lecture__content-title"><b lang='en' class="text-size-change text-uppercase text-bold text-separate"><span class="text-separate">GIT &amp;</span> HTML/CSS</b>입문자를 위한 GIT과 HTML&amp;CSS</p>
                                     <a href="#" role="button" aria-haspopup="true" aria-pressed="false" class="button">강의 정보</a>
                                 </div>
-                                <div class="recommend-lecture__content-detail" role="article" aria-modal="false" aria-labelledby="lectureWebResponsiveDesign1">
-                                    <h3 class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</h3>
+                                <div class="recommend-lecture__content-detail" role="article" aria-labelledby="gitHTMLCSS2">
+                                    <p class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</p>
                                     <p class="recommend-lecture__content-desc">입문자를 위한 GIT과 HTML&amp;CSS</p>
                                     <p class="recommend-lecture__content-review">
                                         <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
@@ -380,12 +382,12 @@
                         </li>
                         <li class="recommend-lecture__slide2">
                             <article class="recommend-lecture__tab-content">
-                                <div class="recommend-lecture__content-container" id="lectureWebResponsiveDesign1">
+                                <div class="recommend-lecture__content-container" id="lectureWebResponsiveDesign2">
                                     <p class="recommend-lecture__content-title"><b lang='en' class="text-size-change text-uppercase text-bold text-separate"><span class="text-separate">responsive web</span> design strategies</b>반응형 웹디자인 전략</p>
                                     <a href="#" role="button" aria-haspopup="true" aria-pressed="false" class="button">강의 정보</a>
                                 </div>
-                                <div class="recommend-lecture__content-detail" role="article" aria-modal="false" aria-labelledby="lectureWebResponsiveDesign1">
-                                    <h3 class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</h3>
+                                <div class="recommend-lecture__content-detail" role="article" aria-labelledby="lectureWebResponsiveDesign2">
+                                    <p class="recommend-lecture__content-title text-uppercase" lang='en'>git &amp; html/css</p>
                                     <p class="recommend-lecture__content-desc">입문자를 위한 GIT과 HTML&amp;CSS</p>
                                     <p class="recommend-lecture__content-review">
                                         <svg class="recommend-lecture__content-icon recommend-lecture__star-icon">
@@ -437,7 +439,6 @@
                                 </div>
                             </article>
                         </li>
-
                     </ul>
                 </section>
             </section>
@@ -560,7 +561,7 @@
         <section class="promotion">
             <h2 class="offscreen" id="promotion">프로모션</h2>
             <figure class="promotion__container container">
-                <iframe class="promotion__video" src="https://www.youtube.com/embed/lmYSIiZFxPI" allowfullscreen aria-labelledby="promotionYoutube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="promotion__video" src="https://www.youtube.com/embed/lmYSIiZFxPI" aria-labelledby="promotionYoutube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <figcaption class="offscreen" id="promotionYoutube">프로모션 비디오</figcaption>
             </figure>
         </section>
@@ -575,12 +576,12 @@
         <section class="gift-card">
             <h2 class="offscreen">Cafe W 기프트 카드</h2>
             <div class="gift-card__container container clearfix">
-                <article class="gift-card__content">
+                <div class="gift-card__content">
                     <p class="gift-card__content-title"><em class="gift-card__content--text-big"><span class="gift-card__content-let-spacing">PICK</span> YOUR</em> FAVORITE</p>
                     <p class="gift-card__content-desc text-bold">다양한 메뉴를<span class="text-separate">카페 W에서 즐겨보세요</span></p>
                     <p class="gift-card__content-sub-desc">카페 W만의 특별함을 경험할 수 있는 최상의 선택 음료 카페 W 커피와 완벽한 어울림을 자랑하는 푸드<span class="text-separate">사용한 시도와 디자인으로 가치를 더하는 상품</span>소중한 사람에게 마음을 전하는 가장 좋은 방법. 카페 W 카드</p>
                     <a href="#" class="button button-stroke gift-card__content-link">자세히 보기</a>
-                </article>
+                </div>
                 <ul class="gift-card__card-items">
                     <li class="gift-card__card-item card1"><img src="./img/home/gift-card__card1.png" alt="라떼 아트 중인 Cafe W의 커피" class="gift-card__card-making-coffee img-rwd"></li>
                     <li class="gift-card__card-item card2"><img src="./img/home/gift-card__card2.png" alt="하트 모양 라떼 아트의 Cafe W의 커피" class="gift-card__card-heart-art img-rwd"></li>

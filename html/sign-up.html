@@ -15,9 +15,9 @@
         <div class="header__container container">
             <h1 class="offscreen">Cafe W</h1>
             <div class="sub-nav-container container">
-                <a href="./../index.html" class="header__home-link">
+                <a href="../index.html" class="header__home-link">
                     <svg class="img-rwd">
-                        <use xlink:href="./../img/sign-up/sign-up-spriteSheet.svg#header__logo"></use>
+                        <use xlink:href="../img/home/main-spriteSheet.svg#header-logo"></use>
                     </svg>
                 </a>
                 <!-- login and sign up -->
@@ -30,16 +30,20 @@
                 </nav>
                 <!-- search form -->
                 <div class="search-form-container">
-                    <button class="search-form__btn-open reset-button" type="button" title="검색창 띄우기">
-                        <span class="ir hide-text-ir">검색창 띄우기</span>
+                    <button class="search-form__btn-open button" type="button" title="검색창 띄우기">
+                        <svg class="search-form__icon">
+                            <use xlink:href="../img/home/main-spriteSheet.svg#header-search"></use>
+                        </svg>
                     </button>
                     <form action="#" class="search-form" method="GET">
                         <fieldset>
                             <legend>검색 영역</legend>
                             <label for="searchInput" class="offscreen">검색창</label>
                             <input type="search" name="searchInput" id="searchInput" placeholder="검색어를 입력하세요...">
-                            <button class="search-form__btn-submit reset-button" type="submit" title="검색하기">
-                                <span class="ir hide-text-ir">검색하기</span>
+                            <button class="search-form__btn-submit button" type="submit" title="검색하기">
+                                <svg class="search-form__icon">
+                                    <use xlink:href="../img/home/main-spriteSheet.svg#header-search"></use>
+                                </svg>
                             </button>
                         </fieldset>
                     </form>
