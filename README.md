@@ -68,27 +68,27 @@
 
 - 폴더 구조
 
-  ![프로젝트 폴더 구조](./asset/repo-structure.PNG)
+  ![프로젝트 폴더 구조](./asset/repo-structure.png)
 
 - CSS 폴더 구조
 
-  ![CSS 폴더 구조](./asset/css-structure.PNG)
+  ![CSS 폴더 구조](./asset/css-structure.png)
 
 - 메인 페이지 구조
 
-  ![메인 페이지 구조](./asset/main-page-structure.PNG)
+  ![메인 페이지 구조](./asset/main-page-structure.png)
 
 ---
 
 **이재훈**
 
-![메인 페이지 구조](./asset/rec-lec.PNG) ![메인 페이지 구조](./asset/nothing.PNG)
+![메인 페이지 구조](./asset/rec-lec.png) ![메인 페이지 구조](./asset/nothing.png)
 
 1. **문제점** : 처음에 display: none과 block 속성을 이용하여 텝을 구현하였으나 HTML 헤딩구조를 볼때 display: none이 들어가잇는 요소가 빠져있었음
 
    **해결방법** : container를 이용하여 전체를 감싼후 position 을 이용하여 다시 재 구현
 
-![IE](./asset/cross.PNG)
+![IE](./asset/cross.png)
 
 2. **문제점** : IE에서 css가 제대로 기능하지 않았음
 
@@ -104,9 +104,9 @@
 
   - placeholder 접근성 문제
 
-  ![입력창 힌트 - 입력 전](asset/input-before.PNG)
+  ![입력창 힌트 - 입력 전](asset/input-before.png)
 
-  ![입력창 힌트 - 입력 후](asset/input-after.PNG)
+  ![입력창 힌트 - 입력 후](asset/input-after.png)
 
   ```HTML
   <div class="sign-up-formemail-container sign-up-formcontainer sign-section-formcontainer">
@@ -130,9 +130,9 @@
 
 - 약관 동의 옆 체크 박스 커스터마이징
 
-  ![체크 박스 커스터마이징](asset/agree.PNG)
+  ![체크 박스 커스터마이징](asset/agree.png)
 
-  ![체크 박스 커스터마이징](asset/agree-before.PNG)
+  ![체크 박스 커스터마이징](asset/agree-before.png)
 
 ```CSS
 
@@ -182,15 +182,15 @@
 
   - 웹 폰트
 
-  ![FOIT](asset/mitt.PNG)
+  ![FOIT](asset/mitt.png)
 
   ![import 방식 인덱스 페이지](asset/index-import.JPG)
 
   ![import 방식 style 파일](asset/style-import.JPG)
 
-  ![preload 방식 인덱스 페이지](asset/index-pre.PNG)
+  ![preload 방식 인덱스 페이지](asset/index-pre.png)
 
-  ![preload 방식 style 파일](asset/font-pre.PNG)
+  ![preload 방식 style 파일](asset/font-pre.png)
 
 - 검색 최적화 이슈
   - `<head>`
@@ -204,12 +204,12 @@
 
 **결과**
 
-![메인 페이지 Lighthouse report](./asset/main-report.PNG)
+![메인 페이지 Lighthouse report](./asset/main-report.png)
 
-![회원 가입 페이지 Lighthouse report](./asset/sign-up-report.PNG)
+![회원 가입 페이지 Lighthouse report](./asset/sign-up-report.png)
 
-![로그인 페이지 Lighthouse report](./asset/sign-in-report.PNG)
+![로그인 페이지 Lighthouse report](./asset/sign-in-report.png)
 
-![이슈 갯수](./asset/git-issue.PNG)
+![이슈 갯수](./asset/git-issue.png)
 
-![풀 리퀘스트 갯수](./asset/git-pr.PNG)
+![풀 리퀘스트 갯수](./asset/git-pr.png)
