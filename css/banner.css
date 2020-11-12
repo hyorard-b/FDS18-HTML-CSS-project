@@ -1,0 +1,50 @@
+.banner {
+    background: url(../img/home/banner__bg.jpg) no-repeat;
+    background-size: cover;
+}
+.banner__container {
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 90px 0 195px;
+    color: #A37356; 
+    position: relative;
+}
+.banner__container::before { 
+    content: "";
+    background: url(../img/home/star-symbol.png) no-repeat 0 0/ 100% 100%;
+    width: 70px;
+    height: 95px;
+    position: absolute;
+    top: 150px;
+    left: -10px;
+    display: inline-block;
+}
+.banner__title {
+    font-size: 1.8rem;
+    letter-spacing: 0.15em;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.banner__text {
+    letter-spacing: 0.05em;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.banner__desc {
+    font-weight: 400;
+    line-height: 20.8px;
+}
+
+.banner__btn {
+    margin-top: 20px;
+    border-color: #A37356;
+}
+
+.banner__title,
+.banner__desc,
+.banner__btn {
+    margin-left: 90px;
+}

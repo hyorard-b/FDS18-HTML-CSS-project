@@ -1,0 +1,97 @@
+/* 회원가입 및 로그인 페이지 공통 스타일 */
+.sign-section{
+    width: 742px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    /* background: ;  바리스타 아저씨*/
+}
+.sign-section__headline,
+.sign-section__desc{
+    text-align: center;
+}
+.sign-section__headline{
+    font-size: 3.2rem;
+}
+.sign-section__desc{
+    font-size: 1.6rem;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #CBC5BE;
+}
+
+/* 로그인 및 회원가입 공통 폼 영역 */
+
+.sign-section-form{
+    width: 438px;
+    margin: 0 auto;
+}
+.sign-section-form__container{
+    width: 100%;
+    position: relative;
+    margin-top: 23px;
+}
+.sign-section-form__label{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.sign-section-form__hint,
+.sign-section-form__error-message{
+    font-size: 1.3rem;
+    padding-left: 9px;
+}
+.sign-section-form__input{
+    width: 100%;
+    height: 34px;
+    padding: 9px;
+    border: 1px solid #7D6F5D;
+    border-radius: 3px;
+    background-color: transparent;
+    position: relative;
+    z-index: 10;
+}
+.sign-section-form__button{
+    width: 100%;
+    background: #7D6F5D;
+    border: none;
+    padding: 15px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #FFFCF9;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+/* 플레이스 홀더 올리고 내리기 */
+.sign-section-form__hint{
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.sign-section-is--active .sign-section-form__hint,
+.sign-section-is--invalid .sign-section-form__hint,
+.sign-section-is--valid .sign-section-form__hint{
+    position: static;
+}
+/* 에러 메시지  */
+.sign-section-form__error-message{
+    display: none;
+    color: #e27762;
+}
+.sign-section-is--invalid .sign-section-form__error-message{
+    display: inline-block;
+    margin-top: 9px;
+
+}
+.sign-section-is--invalid .sign-section-form__input{
+    border-color: #e27762;
+}
+.sign-section-is--valid .sign-section-form__error-message{
+    display: none;
+}
+
+/* 로그인 및 회원가입 주의사항 */
+.sign-section-form__text{
+    font-size: 1.2rem;
+}

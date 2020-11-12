@@ -1,0 +1,32 @@
+.promotion {
+    background-color: #282725;
+
+}
+.promotion__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    position: relative;
+}
+.promotion__container::before,
+.promotion__container::after {
+    content: "";
+    background: url(../img/home/star-symbol.png) no-repeat 0 0/ 100% 100%;
+    width: 70px;
+    height: 95px;
+    position: absolute;
+    top: 250px;
+    display: inline-block;
+}
+.promotion__container::before {
+    left: -50px;
+}
+
+.promotion__container::after {
+    right: -50px;
+}
+.promotion__video {
+    width: 960px;
+    height: 540px;
+}

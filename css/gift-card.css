@@ -1,0 +1,78 @@
+/* 기프트 카드 섹션 */
+.gift-card{
+    background: linear-gradient(105.54deg, rgba(32, 23, 1, 0.5) 36%, rgba(95, 57, 35, 0.2) 74%), url(../img/home/gift-card__bg.jpg) no-repeat 100% / cover;
+}
+.gift-card__container{
+    color: #FFFCF9;
+    padding: 110px 0;
+    padding-left: 111px;
+    padding-right: 176px;
+}
+
+/* 기프트 카드 텍스트 */
+.gift-card__content{
+    float: left;
+    width: 400px;
+    height: 630px;
+    line-height: 1;
+    position: relative;
+    text-align: right;
+}
+.gift-card__content-title{
+    font-size: 74px;
+    letter-spacing: 0.05em;
+}
+.gift-card__content--text-big{
+    font-size: 133px;
+}
+.gift-card__content-let-spacing{
+    letter-spacing: 0.12em;
+}
+.gift-card__content-desc{
+    font-size: 32px;
+    margin-top: 44px;
+    line-height: 1.4em;
+}
+.gift-card__content-sub-desc{
+    font-size: 1.6rem;
+    line-height: 25px;
+    margin-top: 15px;
+}
+.gift-card__content-link{
+    display: inline-block;
+    width: 128px;
+    height: 40px;
+    border: 1px solid #FFFCF9;
+    padding: 10px 23px;
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+}
+/* 기프트 카드 리스트 */
+.gift-card__card-items{
+    float: right;
+    position: relative;
+    width: 630px;
+    height: 595px;
+}
+.gift-card__card-item{
+    width: 284px;
+    height: 362px;
+    position: absolute;
+    border: 10px solid #FFFCF9;
+}
+.gift-card__card-items .card1{
+    top: 41px;
+    left: 0;
+    transform: rotate(-9.21deg);
+}
+.gift-card__card-items .card2{
+    top: 0;
+    left: 213px;
+    transform: rotate(8.71deg);
+}
+.gift-card__card-items .card3{
+    bottom: 0;
+    right: 0;
+    transform: rotate(29.6deg);
+}
