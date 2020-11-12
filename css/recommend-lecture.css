@@ -1,25 +1,36 @@
+.recommend-lecture {
+    height: 620px;
+}
+.recommend-lecture__container {
+    position: relative;
+}
 .recommend-lecture__tab-list {
     display: flex;
     align-items: flex-end;
     font-size: 1.6rem;
     font-weight: 400;
     color: rgba(40,39,37,1);
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%)
 }
 .tab-1,
 .tab-2 {
     padding: 22px 30px;
 }
+
 .tab-1 {
-    min-width: 832px;
-    flex-grow: 1;
+
+    flex-grow: 1.5;
     text-align: right;
 }
 .tab-2 {
-    min-width: 608px;
+    flex-grow: 1;
     background-color: rgba(40,39,37,1);
     color:  #FFFCF9;
     text-align: center;
-    flex-grow: 1;
+    z-index: -1;
 }
 
 .recommend-lecture__icon {
@@ -29,10 +40,13 @@
 }
 
 .recommend-lecture__tab-contents {
-    display: none;
+    position: absolute;
+    top: 64px;
+    left: 50%;
+    transform: translateX(-50%)
 }
 .recommend-lecture__tab-contents.is--active {
-    display: block;
+    z-index: 10;
 }
 
 .recommend-lecture__viewport {
