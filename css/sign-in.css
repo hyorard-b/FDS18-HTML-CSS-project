@@ -122,7 +122,9 @@
     opacity: .5;
     position: relative;
     left: 10px;
-
+}
+.sign-in__member-item:last-child::after{
+    display: none;
 }
 .sign-in__member-link{
     font-size: 1.6rem;

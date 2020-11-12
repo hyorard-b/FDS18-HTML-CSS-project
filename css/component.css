@@ -3,7 +3,8 @@
 
 /* hidden text & content */
 .offscreen,
-legend {
+legend,
+caption {
   overflow: hidden;
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
@@ -126,4 +127,8 @@ legend {
 }
 .text-light{
   font-weight: 300;
+}
+.small-icon-size {
+  width: 10px;
+  height: 10px;
 }

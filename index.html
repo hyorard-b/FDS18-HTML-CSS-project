@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" defer>
+    <meta name="description" content="카페 W의 홈 페이지입니다. 카페 W의 추천 메뉴 그리고 멀티 캠퍼스, 이듬 블랜디드 인기,추천 강좌와 이에 대한 리뷰, 그리고 커피 연구소의 메뉴와 바리스타를 소개합니다."/>
+    <meta name="keywords" content="카페 W 추천 메뉴, 멀티 캠퍼스 추천 강좌, 이듬 블랜디드 추천 강좌, 멀티 캠퍼스 추천 강좌 리뷰, 이듬 블랜디드 추천 강좌 리뷰, 인기 강좌, 카페 W 기프트 카드, 카페 W 커피 연구소의 메뉴와 바리스타 소개, 근처 카페 W 매장 찾기"/>
+    <link rel="preload" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="./js/goToTop.js" async></script>
     <script src="./js/brand-value.js" async></script>
     <title>개발을 커피와 함께하는 Cafe W</title>
-    <meta name="description" content="카페 W의 홈 페이지입니다. 카페 W의 추천 메뉴 그리고 멀티 캠퍼스, 이듬 블랜디드 인기,추천 강좌와 이에 대한 리뷰, 그리고 커피 연구소의 메뉴와 바리스타를 소개합니다."/>
-    <meta name="keywords" content="카페 W 추천 메뉴, 멀티 캠퍼스 추천 강좌, 이듬 블랜디드 추천 강좌, 멀티 캠퍼스 추천 강좌 리뷰, 이듬 블랜디드 추천 강좌 리뷰, 인기 강좌, 카페 W 기프트 카드, 카페 W 커피 연구소의 메뉴와 바리스타 소개, 근처 카페 W 매장 찾기"/>
 </head>
 <body>
     <div class="go-to-nav"><a href="#menuNav" role="button">메뉴 바로가기</a></div>
@@ -171,6 +172,7 @@
                                             <span class="offscreen">5점만점중</span>4점
                                         </p>
                                         <table class="recommend-lecture__info-table">
+                                            <caption>인기강좌 정보 테이블</caption>
                                             <tbody>
                                                 <tr class="info-table__data-group">
                                                     <th class=info-table__question>학습시간</th>
@@ -304,6 +306,7 @@
                                             <span class="offscreen">5점만점중</span>5점
                                         </p>
                                         <table class="recommend-lecture__info-table">
+                                            
                                             <tbody>
                                                 <tr class="info-table__data-group">
                                                     <th class=info-table__question>학습시간</th>
@@ -353,6 +356,7 @@
                                             <span class="offscreen">5점만점중</span>5점
                                         </p>
                                         <table class="recommend-lecture__info-table">
+                                            
                                             <tbody>
                                                 <tr class="info-table__data-group">
                                                     <th class=info-table__question>학습시간</th>
@@ -498,7 +502,7 @@
         <section class="promotion">
             <h2 class="offscreen" id="promotion">프로모션</h2>
             <figure class="promotion__container container">
-                <iframe class="promotion__video" src="https://www.youtube.com/embed/lmYSIiZFxPI" aria-labelledby="promotionYoutube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="promotion__video" title="프로모션 비디오" src="https://www.youtube.com/embed/lmYSIiZFxPI" aria-labelledby="promotionYoutube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <figcaption class="offscreen" id="promotionYoutube">프로모션 비디오</figcaption>
             </figure>
         </section>
@@ -603,7 +607,7 @@
         </div>
     </footer>
     <button type="button" id="goToTopBtn" class="button-goToTop">
-        <img src="./img/home/Up Arrow.png" alt="페이지 맨 위로 가기 버튼">
+        <img src="./img/home/up-arrow.png" alt="페이지 맨 위로 가기 버튼">
     </button>
 </body>
 </html>
