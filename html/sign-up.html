@@ -15,17 +15,21 @@
         <div class="header__container container">
             <h1 class="offscreen">Cafe W</h1>
             <div class="sub-nav-container container">
-                <a href="../index.html" class="header__home-link"><img src="../img/logo.png" alt="Cafe W의 로고" class="header__logo img-rwd"></a>
+                <a href="./../index.html" class="header__home-link">
+                    <svg class="img-rwd">
+                        <use xlink:href="./../img/sign-up/sign-up-spriteSheet.svg#header__logo"></use>
+                    </svg>
+                </a>
                 <!-- login and sign up -->
                 <nav class="nav" aria-labelledby="memberNav">
                     <h2 class="offscreen" id="memberNav">회원메뉴</h2>
                     <ul class="nav__member-items">
-                        <li class="nav__member-item"><a href="../html/sign-in.html" class="nav__member-link">Sign In</a> </li>
-                        <li class="nav__member-item"><a href="../html/sign-up.html" class="nav__member-link">Sign Up</a></li>
+                        <li class="nav__member-item"><a href="./sign-in.html" class="nav__member-link">Sign In</a> </li>
+                        <li class="nav__member-item"><a href="./sign-up.html" class="nav__member-link">Sign Up</a></li>
                     </ul>
                 </nav>
                 <!-- search form -->
-                <div class="search-form__container">
+                <div class="search-form-container">
                     <button class="search-form__btn-open reset-button" type="button" title="검색창 띄우기">
                         <span class="ir hide-text-ir">검색창 띄우기</span>
                     </button>
@@ -274,7 +278,9 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__logo">
-                <img src="../img/footer-logo.png" class="img-rwd" alt="하단쪽에 위치한 Cafe W 로고"/>
+                <svg class="img-rwd">
+                    <use xlink:href="./../img/sign-up/sign-up-spriteSheet.svg#footer__logo"></use>
+                </svg>
             </div>
             <ul class="footer__info-items">
                 <li class="footer__info-item"><a class="footer__info-link" href="#">개인정보처리방침</a></li>

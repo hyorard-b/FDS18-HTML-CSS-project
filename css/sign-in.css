@@ -1,0 +1,129 @@
+.main-content{
+    background: radial-gradient(closest-side, rgba(255, 255, 255, 0) 0%, rgba(32, 30, 23, 0.6) 100%),
+                url(./../img/sign-in/sign-in__bg.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+.sign-in-container{
+    padding: 100px 350px;
+}
+.main-content::before,
+.main-content::after {
+    content: "";
+    background: url(../img/sign-in/sign-in__star-symbol.png) no-repeat 0 0/ 100% 100%;
+    width: 70px;
+    height: 95px;
+    position: absolute;
+    display: inline-block;
+}
+.main-content::before {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 140px;
+}
+.main-content::after {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 140px;
+}
+
+
+/* 로그인 페이지 */
+.sign-in{
+    background: #FFFCF9 url(../img/sign-in/sign-in-form__bg.png) no-repeat 105% 135%/ 20%;
+    color: #7D6F5D;
+    border-radius: 10px;
+}
+.sign-section__desc{
+    margin-bottom: 10px;
+}
+
+/* 로그인 폼 */
+.sign-in-form{
+}
+.sign-in-form__fieldset{
+    display: flex;
+    flex-flow: column nowrap;
+}
+/* 로그인 주의사항 */
+.sign-in__notice-items{
+    width: 438px;
+    margin: 24px auto 0;
+}
+.sign-section-form__text .text-separate{
+    text-indent: 1em;
+}
+
+/* 로그인 데이터 저장 영역 */
+.sign-in-form__save-container{
+    display: flex;
+    flex-flow: row nowrap;
+    order: 10;
+    margin-top: 32px;
+}
+.sign-in-form__save-email,
+.sign-in-form__save-login{
+    width: 220px;
+}
+
+/* 토글 버튼 */
+.sign-in-form__radio-save-email,
+.sign-in-form__radio-save-login{
+    position: relative;
+    appearance: none;
+    outline: none;
+    width: 34px;
+    height: 14px;
+    background-color: #CFCCC7;
+    border: 1px solid #CFCCC7;
+    border-radius: 50px;
+    box-shadow: inset -20px 0 0 0 #CFCCC7;
+    transition-duration: 100ms;
+    opacity: 0.6;
+    margin-right: 5px;
+}
+.sign-in-form__radio-save-email:after,
+.sign-in-form__radio-save-login:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    background-color: #CFCCC7;
+    border-radius: 50%;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+}
+.sign-in-form__radio-save-email:checked,
+.sign-in-form__radio-save-login:checked {
+    border-color: #7D6F5D;
+    box-shadow: inset 20px 0 0 0 #7D6F5D;
+    opacity: 1;
+}
+.sign-in-form__radio-save-email:checked:after,
+.sign-in-form__radio-save-login:checked:after {
+    left: 15px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+    background-color: #7D6F5D;
+}
+
+/* 로그인 멤버 영역 */
+.sign-in__member-items{
+    margin-top: 31px;
+    padding: 23px 191px;
+    border-top: 1px solid hsla(34,15%,43%,0.5);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.sign-in__member-item::after{
+    content: "ㅣ";
+    opacity: .5;
+    position: relative;
+    left: 10px;
+
+}
+.sign-in__member-link{
+    font-size: 1.6rem;
+    padding: 14px 8px;
+}
