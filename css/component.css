@@ -71,6 +71,7 @@ legend {
 }
 /* go to top button */
 .button-goToTop {
+  background-color: rgba(226,119,98,1);
   cursor: pointer;
   position: fixed;
   z-index: 50;
