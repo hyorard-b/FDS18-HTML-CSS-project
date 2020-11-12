@@ -1,10 +1,9 @@
-/* 회원가입 및 로그인 페이지 공통 스타일 */
+/* sign-up and sign-in component */
 .sign-section{
     width: 742px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 25px;
-    /* background: ;  바리스타 아저씨*/
 }
 .sign-section__headline,
 .sign-section__desc{
@@ -19,7 +18,7 @@
     border-bottom: 1px solid #CBC5BE;
 }
 
-/* 로그인 및 회원가입 공통 폼 영역 */
+/* sign-up and sign-in form */
 
 .sign-section-form{
     width: 438px;
@@ -63,7 +62,7 @@
     margin-top: 20px;
 }
 
-/* 플레이스 홀더 올리고 내리기 */
+/* appear hint text for input */
 .sign-section-form__hint{
     position: absolute;
     top: 40px;
@@ -74,7 +73,7 @@
 .sign-section-is--valid .sign-section-form__hint{
     position: static;
 }
-/* 에러 메시지  */
+/* error message  */
 .sign-section-form__error-message{
     display: none;
     color: #e27762;
@@ -82,7 +81,6 @@
 .sign-section-is--invalid .sign-section-form__error-message{
     display: inline-block;
     margin-top: 9px;
-
 }
 .sign-section-is--invalid .sign-section-form__input{
     border-color: #e27762;
@@ -91,7 +89,7 @@
     display: none;
 }
 
-/* 로그인 및 회원가입 주의사항 */
+/* info text font size */
 .sign-section-form__text{
     font-size: 1.2rem;
 }

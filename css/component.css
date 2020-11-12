@@ -7,7 +7,6 @@ legend {
   overflow: hidden;
   position: absolute !important;
   clip: rect(0, 0, 0, 0);
-  clip-path: polygon(0 0, 0 0, 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -65,7 +64,7 @@ legend {
 }
 /* hide text for ir technique */
 .hide-text-ir {
-  text-indent: 50px;
+  text-indent: -9999px;
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
@@ -86,16 +85,21 @@ legend {
   transform: translateY(200px) scale(0);
   transition: all 0.8s 0.1s cubic-bezier(0.19, 1, 0.22, 1);
 }
-.button-goToTop svg path {
-  fill: #fffcf9;
-}
-.button-goToTop svg circle {
-  fill: #E27762;
-}
 .is--btnActive {
   transform: none;
 } 
-
+.button-stroke {
+  padding: 4px 20px;
+  border: 1px solid currentColor;
+  font-size: 1.6rem;
+  border-radius: 3px;
+}
+.button-fill {
+  border-radius: 3px;
+}
+.text-bold {
+  font-weight: 700;
+}
 
 /* text */
 .text-uppercase {
@@ -121,5 +125,4 @@ legend {
 }
 .text-light{
   font-weight: 300;
-
 }

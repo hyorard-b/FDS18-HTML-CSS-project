@@ -11,14 +11,42 @@
 
 /* Component style */
 @import url(./common.css);
-@import url(./banner.css);
-@import url(./promotion.css);
-@import url(./seasonal-menu.css);
-@import url(./info-board.css);
+
+/* notification */
 @import url(./notification.css);
-@import url(./gift-card.css);
-@import url(./brand-value.css);
-@import url(./sign-in.css);
-@import url(./sign-component.css);
+
+/* seasonal-menu */
+@import url(./seasonal-menu.css);
+
+/* recommend-lecture */
 @import url(./recommend-lecture.css);
 
+/* info-board */
+@import url(./info-board.css);
+
+/* promotion */
+@import url(./promotion.css);
+
+/* banner */
+@import url(./banner.css);
+
+/* gift-card */
+@import url(./gift-card.css);
+
+/* brand-value */
+@import url(./brand-value.css);
+
+/* curriculmn section */
+@import url(./curriculumn.css);
+
+/* find-a-store section */
+@import url(./find-a-store.css);
+
+/* sign-up and sign-in component.css */
+@import url(./component-sign.css);
+
+/* sign-up */
+@import url(./sign-up.css);
+
+/* sign-in */
+@import url(./sign-in.css);

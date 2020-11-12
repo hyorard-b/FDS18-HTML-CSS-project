@@ -10,15 +10,16 @@
     padding: 22px 30px;
 }
 .tab-1 {
-    width: 832px;
+    min-width: 832px;
     flex-grow: 1;
     text-align: right;
 }
 .tab-2 {
-    width: 608px;
+    min-width: 608px;
     background-color: rgba(40,39,37,1);
     color:  #FFFCF9;
     text-align: center;
+    flex-grow: 1;
 }
 
 .recommend-lecture__icon {

@@ -1,0 +1,61 @@
+.find-a-store {
+  /* gradient 컬러값 다시줘야함, svg 스프라이트 코드 bg이미지로 쓰는 방법 찾기*/
+  background: url(../img/home/coffee-store.svg)no-repeat 72% 100%/ 152px 127px, radial-gradient(circle, #282725, #282725, #171615)  #282725; 
+  height: 420px;
+  border-bottom: 1px solid rgba(255, 252, 249, 0.15);
+}
+.find-a-store__container {
+  position: relative;
+  color: #FFFCF9;
+  padding-top: 80px;
+}
+.find-a-store__desc,
+.find-a-store__link {
+  margin-left: 774px;
+}
+.find-a-store__desc {
+  width: 400px;
+}
+/* 각 find-a-store__desc에 개별 클래스 네임 주기*/
+.find-a-store__desc:first-of-type {
+  font-size: 2.5rem;
+}
+.find-a-store__desc:nth-of-type(2) {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+.find-a-store__desc:last-of-type {
+  margin-top: 15px;
+  font-size: 1.6rem;
+}
+/* span에 클래스 네임 주기 or 디플블럭 컴포넌트 만들기*/
+.find-a-store__desc span {
+  display: block;
+}
+/* 링크 버튼 display: inline-block 컴포넌트 만들기? */
+.find-a-store__link {
+  display: inline-block;
+  margin-top: 36px;
+}
+.find-a-store__circle-big,
+.find-a-store__circle-small {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);
+}
+/* ir 컴포넌트 수정하기-텍스트 계속 보임 */
+.find-a-store__circle-big {
+  width: 360px;
+  height: 360px;
+  background: url(../img/home/find-a-store__left.png) no-repeat 50% 50%;
+  background-size: cover;
+  top: -50px;
+  left: 174px;
+}
+.find-a-store__circle-small {
+  width: 220px;
+  height: 220px;
+  background: url(../img/home/find-a-store__right.png) no-repeat 50% 50%;
+  top: 140px;
+  left: 440px;
+}
