@@ -28,7 +28,7 @@
 .line-divider::after {
     content: "";
     display: inline-block;
-    width: 166px;
+    width: 162px;
     height: 2px; 
     background: #A37356;
     margin-bottom: 5px;
@@ -76,7 +76,7 @@
     display: inline-block;
     position: absolute;
     text-align: center;
-    width: 450px;
+    width: 500px;
     letter-spacing: 0.1em;
 }
 .seasonal-menu__img-desc [lang='en'] {
@@ -86,29 +86,30 @@
     display: block;
 }
 .seasonal-menu__item:first-child .seasonal-menu__img-desc {
-    order: initial;
+    order: 0;
 }
 .seasonal-menu__item:first-child {
-    top: 140px;
+    top: 60px;
     left: 100px;
 }
 .seasonal-menu__item:nth-child(2) {
-    top: 60px;
+    top: -20px;
     left: 450px;
 }
 .seasonal-menu__item:last-child {
-    top: 200px;
+    top: 120px;
     right: 0;
 }
 .seasonal-menu__item:first-child .seasonal-menu__img-desc {
-    top: 270px;
+    top: 350px;
+    left:-30px;;
 }
 .seasonal-menu__item:nth-child(2) .seasonal-menu__img-desc {
-    top: -90px;
+    top: -10px;
     left: -70px;
 }
 .seasonal-menu__item:last-child .seasonal-menu__img-desc {
-    top: -140px;
+    top: -60px;
 }
 .seasonal-menu__button {
     border-color: #E27762;

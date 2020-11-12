@@ -11,16 +11,14 @@
     <meta name="keywords" content="카페 W 로그인, 카페 W 회원가입, 카페 W 아이디 찾기, 카페 W 비밀번호 찾기, 카페 W 최적화 브라우저">
 </head>
 <body>
-    <div class="skip-nav"><a href="#menuNav">메뉴 바로가기</a></div>
-    <div class="skip-nav"><a href="#main">콘텐츠 바로가기</a></div>
+    <div class="go-to-nav"><a href="#menuNav" role="button">메뉴 바로가기</a></div>
+    <div class="skip-nav"><a href="#main-content" role="button">콘텐츠 바로가기</a></div>
     <header class="header" id="header">
         <div class="header__container container">
             <h1 class="offscreen">Cafe W</h1>
             <div class="sub-nav-container container">
                 <a href="../index.html" class="header__home-link" title="Cafe W 홈 페이지 바로가기" aria-label="Cafe W 홈 페이지 바로가기">
-                    <svg class="img-rwd">
-                        <use xlink:href="../img/home/main-spriteSheet.svg#header-logo"></use>
-                    </svg>
+                    <img src="../img/svg/main-svgs/header__logo.svg" alt="Cafe W 로고 이미지" class="img-rwd">
                 </a>
                 <!-- login and sign up -->
                 <nav class="nav" aria-labelledby="memberNav">
@@ -32,20 +30,16 @@
                 </nav>
                 <!-- search form -->
                 <div class="search-form-container">
-                    <button class="search-form__btn-open button" type="button" title="검색창 띄우기">
-                        <svg class="search-form__icon">
-                            <use xlink:href="../img/home/main-spriteSheet.svg#header-search"></use>
-                        </svg>
+                    <button class="search-form__btn-open button" type="button" title="검색창 띄우기" aria-label="검색창 띄우기 버튼">
+                        <img src="../img/svg/main-svgs/header__search.svg" alt="검색창 띄우기 버튼" class="search-form__icon">
                     </button>
                     <form action="#" class="search-form" method="GET">
                         <fieldset>
                             <legend>검색 영역</legend>
                             <label for="searchInput" class="offscreen">검색창</label>
                             <input type="search" name="searchInput" id="searchInput" placeholder="검색어를 입력하세요...">
-                            <button class="search-form__btn-submit button" type="submit" title="검색하기">
-                                <svg class="search-form__icon">
-                                    <use xlink:href="../img/home/main-spriteSheet.svg#header-search"></use>
-                                </svg>
+                            <button class="search-form__btn-submit button" type="submit" title="검색하기" aria-label="검색창 닫기 버튼">
+                                <img src="../img/svg/main-svgs/header__search.svg" alt="검색창 닫기 버튼" class="search-form__icon">
                             </button>
                         </fieldset>
                     </form>
@@ -136,17 +130,19 @@
                 <ul class="sign-in__notice-items">
                     <li class="sign-in__notice-item sign-up-form__text">
                         <p class="sign-section-form__text">
-                            <svg width="10" height="10">
+                            <img src="../img/sign-in/star.png" alt="" class="sign-in__img">
+                            <!-- <svg width="10" height="10">
                                 <use xlink:href="./../img/sign-in/sign-in-spriteSheet.svg#sign-in__star"></use>
-                            </svg>
+                            </svg> -->
                             타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로,<span class="text-separate">사용자 정보 보호를 위해 정기적인 비밀번호 변경을 요청 드립니다.</span>
                         </p>
                     </li>
                     <li class="sign-in__notice-item sign-up-form__text">
                         <p class="sign-section-form__text">
-                            <svg width="10" height="10">
+                            <img src="../img/sign-in/star.png" alt="" class="sign-in__img">
+                            <!-- <svg width="10" height="10">
                                 <use xlink:href="./../img/sign-in/sign-in-spriteSheet.svg#sign-in__star"></use>
-                            </svg>
+                            </svg> -->
                             Cafe W 공식 홈페이지는 Internet Explorer 9.0 이상, Chrome, Firefox,<span class="text-separate">Safari, Edge 브라우저에 최적화 되어있습니다.</span>
                         </p>
                     </li>
@@ -162,9 +158,7 @@
     <footer class="footer">
         <div class="footer__container container">
             <div class="footer__logo">
-                <svg class="img-rwd">
-                    <use xlink:href="./../img/sign-in/sign-in-spriteSheet.svg#footer__logo"></use>
-                </svg>
+                <img src="../img/svg/main-svgs/footer__logo.svg" alt="하단쪽 카페로고" class="img-rwd">
             </div>
             <ul class="footer__info-items">
                 <li class="footer__info-item"><a class="footer__info-link" href="#">개인정보처리방침</a></li>
